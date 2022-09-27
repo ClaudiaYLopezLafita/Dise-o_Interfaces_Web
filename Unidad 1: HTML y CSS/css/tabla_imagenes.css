@@ -1,0 +1,18 @@
+table,
+thead,
+tfoot,
+th,
+td {
+    border-style: dashed;
+    border-color: brown;
+    border-width: 2px;
+}
+
+thead,
+tfoot {
+    background-color: bisque;
+}
+
+td {
+    text-align: center;
+}

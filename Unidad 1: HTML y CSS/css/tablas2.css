@@ -1,0 +1,41 @@
+th,
+td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+tfoot p{
+    margin-top: 0%;
+    margin-bottom: 0%;
+    text-align: left;
+}
+
+tr:nth-child(2) td:nth-child(2), tr:nth-child(2) td:nth-child(6) {
+    background-color: rgb(238, 238, 102);
+}
+tr:nth-child(5){
+    background-color: lightgrey;
+}
+
+tr:nth-child(2) td:nth-child(4), tr:nth-child(2) td:nth-child(5),
+tr:nth-child(4) td:nth-child(2), tr:nth-child(6) td:nth-child(2){
+    background-color: lightcoral;
+}
+
+tr:nth-child(7) td:nth-child(2), tr:nth-child(4) td:nth-child(3), 
+tr:nth-child(6) td:nth-child(3), tr:nth-child(8) td:nth-child(3){
+    background-color: lightskyblue;
+}
+
+tr:nth-child(2) td:nth-child(3), tr:nth-child(6) td:nth-child(4),
+tr:nth-child(6) td:nth-child(6), tr:nth-child(4) td:nth-child(4){
+    background-color: #bb93ca;
+}
+
+tr:nth-child(6) td:nth-child(5), tr:nth-child(8) td:nth-child(2){
+    background-color:lightgoldenrodyellow;
+}
+
+tr:nth-child(7) td:nth-child(3), tr:nth-child(8) td:nth-child(4){
+    background-color: lightgreen;
+}

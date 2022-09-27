@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas</title>
+
+    <style>
+        table tr:first-child{
+            background-color: chartreuse;
+            text-align: center;
+        }
+
+        tr td:nth-child(3), th:nth-child(3){
+            background-color: blue;
+        }
+
+        tr:nth-child(7){
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <colgroup>
+            <col span="2" style="background-color: #ecc3da">
+        </colgroup>
+        <tr>
+            <td colspan="3">ALUMNOS MATRICULADOS</td>
+        </tr>
+        <tr>
+            <th>NOMBRE</th>
+            <th>APELLIDO</th>
+            <th>TELEFONO</th>
+        </tr>
+        <tr>
+            <td>Guillermo</td>
+            <td>Alameda</td>
+            <td>111111111</td>
+        </tr>
+        <tr>
+            <td>Paula</td>
+            <td>Martinez</td>
+            <td>222222222</td>
+        </tr>
+        <tr>
+            <td>Julia</td>
+            <td>Rubio</td>
+            <td>333333333</td>
+        </tr>
+        <tr>
+            <td>Lucia</td>
+            <td>Fernandez</td>
+            <td>444444444</td>
+        </tr>
+        <tr>
+            <td>TOTAL DE ALUMNOS</td>
+            <td>4</td>
+        </tr>
+    </table>
+</body>
+
+</html>
