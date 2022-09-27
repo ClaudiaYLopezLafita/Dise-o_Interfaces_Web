@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+
+    <link rel="stylesheet" href="./css/formulario.css">
+</head>
+
+<body>
+    <h1>Formulario de reserva de salas</h1>
+    
+    <form action="">
+        <table>
+            <tr>
+                <td> <label for="fname">Tu nombre:</label></td>
+                <td><input type="text" id="fname" name="fname" placeholder="nombre"></td>
+            </tr>
+            <tr>
+                <td><label for="mail">Tu correo electrónico</label></td>
+                <td><input type="text" id="mail" name="mail" placeholder="correo electronico"></td>
+            </tr>
+            <tr>
+                <td><label for="departamento">Departamento:</label></td>
+                <td>
+                    <select name="departamento">
+                        <optgroup label="Departamentos">
+                            <option value="V" selected> Vental</option>
+                            <option value="R">RRHH</option>
+                            <option value="M"> Marketing </option>
+                            <option value="F"> Finanzas</option>
+                            <option value="B"> Boss</option>
+                        </optgroup>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="type">Tipo de Sala que desea reservar:</label></td>
+                <td>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <input type="radio" name="typeroomA" id="type" checked>Tipo A
+                        </li>
+                        <li>
+                            <input type="radio" name="typeroomA" id="type">Tipo B
+                        </li>
+                        <li>
+                            <input type="radio" name="typeroomA" id="type">Tipo C
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="requisitos"> Requisitos Exra</label></td>
+                <td>
+                    <ul style="list-style-type: none;">
+                        <li>
+                            <input type="checkbox" name="requisitos" checked/> Caballete y bolígrafos
+                        </li>
+                        <li>
+                            <input type="checkbox" name="requisitos" checked/> Televisión
+                        </li>
+                        <li>
+                            <input type="checkbox" name="requisitos"/> Café. té y agua
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="fecha">Fecha de la reserva:</label></td>
+                <td>
+                    <input type="date" name="fecha" id="fecha">
+                </td>
+            </tr>
+            <tr>
+                <td><label for="hora">Hora de la reserva:</label></td>
+                <td>
+                    <input type="time" name="hora" id="hora">
+                </td>
+            </tr>
+
+        </table>
+    </form>
+</body>
+
+</html>
