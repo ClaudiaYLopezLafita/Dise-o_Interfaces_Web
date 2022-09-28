@@ -2,11 +2,16 @@ body{
     font-weight: bold;
 }
 
+table{
+    border-spacing: 0px;
+}
+
 td {
     padding: 10px;
     border-bottom: 2px solid black;
     border-collapse: collapse;
 }
+
 
 tr:first-child td{
     border-top: 2px solid black;
@@ -23,4 +28,4 @@ label::after{
 
 tr:nth-child(odd) {
     background-color: lightgray;
-  }
+}
