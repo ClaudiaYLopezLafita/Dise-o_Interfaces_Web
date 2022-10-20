@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+
+    </style>
+  </head>
+  <body>
+    
+   <div id="container">
+    <h1>Formulario de Registro</h1>
+    <form action="">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <table>
+          <tr>
+            <td><label for="prefijo" title="label prefijo">Prefijo: </label></td>
+            <td><input type="" id="prefijo" name="td_prefijo" /></td>
+          </tr>
+          <tr>
+            <td><label for="name" title="label nombre">Nombre: </label></td>
+            <td><input type="text" id="name" name="td_name" required/></td>
+          </tr>
+          <tr>
+            <td><label for="surname" title="label apellidos">Apellidos: </label></td>
+            <td><input type="text" id="surname" name="td_surname" required/></td>
+          </tr>
+          <tr>
+            <td><label for="email" title="label email">Email: </label></td>
+            <td><input type="email" id="email" name="td_email" required/></td>
+          </tr>
+          <tr>
+            <td><label for="phone" title="label telefono">Teléfono: </label></td>
+            <td><input type="tel" id="phone" name="td_phone" maxlength="9"/></td>
+          </tr>
+          <tr>
+            <td><label for="birthday" title="label fecha nacimiento">Fecha de Nacimiento: </label></td>
+            <td><input type="date" id="birthday" name="td_birthday" required/></td>
+          </tr>
+          <tr>
+            <td><label for="age" title="label edad">Edad: </label></td>
+            <td><input type="number" id="age" name="td_age" min="16" max="130"/></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Datos Adicionales</legend>
+        <table>
+          <tr>
+            <td><label for="color" title="label color">Color Preferido: </label></td>
+            <td><input type="color" id="color" name="td_color" /></td>
+          </tr>
+          <tr>
+            <td><label for="month" title="label inicio curso">Inicio Estudios: </label></td>
+            <td><input type="month" id="month" name="td_month" /></td>
+          </tr>
+          <tr>
+            <td><label for="pagWeb" title="label pagina web">Pág. Web: </label></td>
+            <td><input type="text" id="pagWeb" name="td_pagWeb" /></td>
+          </tr>
+          <tr>
+            <td><label for="curso" title="label curso actual">Curso actual: </label></td>
+            <td><input type="" id="curso" name="td_curso" /></td>
+          </tr>
+          <tr>
+            <td><label for="satisfacción" title="label nivel satisfaccion">Nivel de satisfacción: </label></td>
+            <td><input type="range" id="satisfacción" name="td_satisfacción" /></td>
+          </tr>
+        </table>
+      </fieldset>
+      <fieldset>
+        <legend>Contraseña</legend>
+        <table>
+            <tr>
+                <td> <label for="password" title="label contraseña">Contraseña actual: </label></td>
+                <td><input type="password" id="password" name="td_password"></td>
+            </tr>
+            <tr>
+                <td> <label for="checkConciones" title="label check condiciones">Comprendo la importancia de establecer contraseñas seguras.</label></td>
+                <td><input type="checkbox" id="checkConciones" name="td_checkConciones"></td>
+            </tr>
+        </table>
+      </fieldset>
+      <div id="buttons">
+        <button type="submit">Enviar</button>
+        <button type="reset" onclick="resetData()">Resetear</button>
+      </div>
+    </form>
+   </div>
+
+   <script>
+    function resetData(){
+      location.reload();
+    }
+   </script>
+  </body>
+</html>
