@@ -4,93 +4,195 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Ejercicio validacion HTML</title>
 
     <style>
+/*Inicio del estilo del formulario */
+      html{
+        font-family: 'Helvetica', 'Arial', sans-serif;
+      }
+
+      h1{
+        text-align: center;
+      }
+
+      form {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 35%;
+        box-shadow: 0 2px 15px black;
+      }
+
+      #datos_personales, #datos_password{
+        background-color: rgb(238, 228, 228);
+      }
+
+      #datos_personales, #datos_adicionales{
+        margin-bottom: 10px;
+      }
+
+      legend{
+        font-weight: bold;
+      }
+
+      #datos_personales tr td:nth-child(2), #datos_adicionales tr td:nth-child(2){
+        padding-left: 15%;
+      }
+
+      button{
+        display: inline-block;
+        font-size: 1em;
+        padding: 1em 2em;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        font-weight: bold; 
+        margin: 25px;
+      }
+
+      #enviar{
+        background-color: #7fffd4;
+        margin-left: 42%;
+        padding-left: 25px;
+        padding-right: 25px;
+        box-shadow: 0 8px 25px rgba(0, 204, 255, 0.5);
+      }
+
+      #resetear{
+        background-color: #ffb6c1;
+        padding-left: 23px;
+        padding-right: 23px;
+        box-shadow: 0 8px 25px rgba(255, 0, 130, 0.5);
+       
+      }
+/*Fin del estilo del formulario */
+
+      /* borde de color donde este el focus */
+      input:focus { 
+          outline: none !important;
+          border-color: #7eacdd;
+          box-shadow: 0 0 10px #719ECE;
+      }
+      
+      /*borde negro en los input obligatorios/requridos*/
+      input:required{
+          outline: none !important;
+          border-color: 1px solid #000000;
+          box-shadow: 0 0 10px #d3d3d3;
+      }
+
+      /*borde plateado/gris en inputs no obligatorios/reqierodos*/
+
+      /*validancion del rango de edad.*/
+      #age:in-range{
+        background-color: #98fb98 ;
+      }
+
+      #age:out-of-range{
+        background-color: #F1948A ;
+      }
+
+      /*span tras validaciones inputs*/
 
     </style>
   </head>
   <body>
     
-   <div id="container">
-    <h1>Formulario de Registro</h1>
+   <div class="container">
+    <h1>Ejercicio validación HTML</h1>
     <form action="">
-      <fieldset>
+      <fieldset id="datos_personales">
         <legend>Datos Personales</legend>
         <table>
           <tr>
-            <td><label for="prefijo" title="label prefijo">Prefijo: </label></td>
-            <td><input type="" id="prefijo" name="td_prefijo" /></td>
+            <td><label for="prefijo" title="label prefijo" >Prefijo: </label></td>
+            <td>
+              <input type="text" list="prefijo_chose" id="prefijo" name="td_prefijo" title="input prefijo" autocomplete="on" autofocus />
+              <datalist id="prefijo_chose">
+                <option value="Sr.">
+                <option value="Sra.">
+                <option value="Dr.">
+                <option value="Srita.">
+              </datalist>
+            </td>
           </tr>
           <tr>
             <td><label for="name" title="label nombre">Nombre: </label></td>
-            <td><input type="text" id="name" name="td_name" required/></td>
+            <td><input type="text" id="name" name="td_name" title="input name" required/></td>
           </tr>
           <tr>
             <td><label for="surname" title="label apellidos">Apellidos: </label></td>
-            <td><input type="text" id="surname" name="td_surname" required/></td>
+            <td><input type="text" id="surname" name="td_surname" title="input surname" required/></td>
           </tr>
           <tr>
             <td><label for="email" title="label email">Email: </label></td>
-            <td><input type="email" id="email" name="td_email" required/></td>
+            <td><input type="email" id="email" name="td_email" title="input email" required/></td>
           </tr>
           <tr>
             <td><label for="phone" title="label telefono">Teléfono: </label></td>
-            <td><input type="tel" id="phone" name="td_phone" maxlength="9"/></td>
+            <td><input type="tel" id="phone" name="td_phone" title="input phone" maxlength="9" minlength="9" pattern="\d{9}"/></td>
           </tr>
           <tr>
             <td><label for="birthday" title="label fecha nacimiento">Fecha de Nacimiento: </label></td>
-            <td><input type="date" id="birthday" name="td_birthday" required/></td>
+            <td><input type="date" id="birthday" name="td_birthday" title="input date" required/></td>
           </tr>
           <tr>
             <td><label for="age" title="label edad">Edad: </label></td>
-            <td><input type="number" id="age" name="td_age" min="16" max="130"/></td>
+            <td><input type="number" id="age" name="td_age" title="input age" min="16" max="130"/></td>
           </tr>
         </table>
       </fieldset>
-      <fieldset>
+      <fieldset id="datos_adicionales">
         <legend>Datos Adicionales</legend>
         <table>
           <tr>
             <td><label for="color" title="label color">Color Preferido: </label></td>
-            <td><input type="color" id="color" name="td_color" /></td>
+            <td><input type="color" id="color" name="td_color" title="input color"/></td>
           </tr>
           <tr>
             <td><label for="month" title="label inicio curso">Inicio Estudios: </label></td>
-            <td><input type="month" id="month" name="td_month" /></td>
+            <td><input type="month" id="month" name="td_month" max="2022-09" title="input moth"/></td>
           </tr>
           <tr>
             <td><label for="pagWeb" title="label pagina web">Pág. Web: </label></td>
-            <td><input type="text" id="pagWeb" name="td_pagWeb" /></td>
+            <td><input type="url" id="pagWeb" name="td_pagWeb" title="input pagWeb" pattern="https://.*"/>
+            </td>
           </tr>
           <tr>
             <td><label for="curso" title="label curso actual">Curso actual: </label></td>
-            <td><input type="" id="curso" name="td_curso" /></td>
+            <td>
+              <select name="td_curso" id="curso" title="combo cursoActual">
+                <option value="21-22">2021/2022</option>
+                <option value="22-23">2022/2023</option>
+              </select>
+            </td>
           </tr>
           <tr>
             <td><label for="satisfacción" title="label nivel satisfaccion">Nivel de satisfacción: </label></td>
-            <td><input type="range" id="satisfacción" name="td_satisfacción" /></td>
+            <td><input type="range" id="satisfacción" name="td_satisfacción" title="input nivelSatisfaccion" min="0" max="10" step="0.5"/></td>
           </tr>
         </table>
       </fieldset>
-      <fieldset>
+      <fieldset id="datos_password">
         <legend>Contraseña</legend>
         <table>
             <tr>
-                <td> <label for="password" title="label contraseña">Contraseña actual: </label></td>
-                <td><input type="password" id="password" name="td_password"></td>
+                <td> <label for="password" title="label password">Contraseña actual: </label></td>
+                <td><input type="password" id="password" name="td_password" title="input password"></td>
             </tr>
             <tr>
-                <td> <label for="checkConciones" title="label check condiciones">Comprendo la importancia de establecer contraseñas seguras.</label></td>
-                <td><input type="checkbox" id="checkConciones" name="td_checkConciones"></td>
+                <td><label for="checkConciones" title="label check condiciones" style="font-size: smaller">Comprendo la importancia de establecer contraseñas seguras.</label></td>
+                <td><input type="checkbox" id="checkConciones" name="td_checkConciones" title="input check condiciones"></td>
             </tr>
         </table>
       </fieldset>
-      <div id="buttons">
-        <button type="submit">Enviar</button>
-        <button type="reset" onclick="resetData()">Resetear</button>
-      </div>
     </form>
+    <div id="buttons">
+      <button type="submit" id="enviar">Enviar</button>
+      <button type="reset" id="resetear" onclick="resetData()">Resetear</button>
+    </div>
    </div>
 
    <script>
