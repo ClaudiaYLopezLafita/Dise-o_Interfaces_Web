@@ -78,12 +78,13 @@
       
       /*borde negro en los input obligatorios/requridos*/
       input:required{
-          outline: none !important;
+          /* outline: none !important; */
           border-color: 1px solid #000000;
-          box-shadow: 0 0 10px #d3d3d3;
+          box-shadow: 0 0 10px #d3d3d3; 
       }
 
       /*borde plateado/gris en inputs no obligatorios/reqierodos*/
+
 
       /*validancion del rango de edad.*/
       #age:in-range{
@@ -95,7 +96,22 @@
       }
 
       /*span tras validaciones inputs*/
+      /* input + span {
+        position: relative;
+      }
 
+      input+span::before{
+        position: relative;
+      }
+
+      input:invalid{
+        border:  1px solid red;
+      }
+
+      input:invalid + span::after{
+        content: "x";
+        color: red;
+      } */
     </style>
   </head>
   <body>
