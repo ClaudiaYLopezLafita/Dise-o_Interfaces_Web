@@ -38,7 +38,7 @@
       }
 
       #datos_personales tr td:nth-child(2), #datos_adicionales tr td:nth-child(2){
-        padding-left: 15%;
+        padding-left: 13%;
       }
 
       button{
@@ -78,13 +78,15 @@
       
       /*borde negro en los input obligatorios/requridos*/
       input:required{
-          /* outline: none !important; */
           border-color: 1px solid #000000;
-          box-shadow: 0 0 10px #d3d3d3; 
+          box-shadow: 0 0 10px rgb(48, 46, 46); 
       }
 
       /*borde plateado/gris en inputs no obligatorios/reqierodos*/
-
+      input{
+        border-color: grey;
+        box-shadow: 0 0 10px white; 
+      }
 
       /*validancion del rango de edad.*/
       #age:in-range{
@@ -95,23 +97,35 @@
         background-color: #F1948A ;
       }
 
-      /*span tras validaciones inputs*/
-      /* input + span {
+      /*Validacion de inputs*/
+
+      input + span {
         position: relative;
-      }
+      } 
 
       input+span::before{
         position: relative;
       }
 
-      input:invalid{
+       /*en caso de ser invalidos*/
+      /* input:invalid{
         border:  1px solid red;
-      }
+      } */
 
       input:invalid + span::after{
         content: "x";
         color: red;
+      }
+
+      /*en caso de ser validos*/
+      /* input:valid{
+        border:  1px solid green;
       } */
+
+      input:valid + span::after{
+        content: "✔️";
+        color: green;
+      }
     </style>
   </head>
   <body>
@@ -132,31 +146,32 @@
                 <option value="Dr.">
                 <option value="Srita.">
               </datalist>
+              <span></span>
             </td>
           </tr>
           <tr>
             <td><label for="name" title="label nombre">Nombre: </label></td>
-            <td><input type="text" id="name" name="td_name" title="input name" required/></td>
+            <td><input type="text" id="name" name="td_name" title="input name" required/><span></span></td>
           </tr>
           <tr>
             <td><label for="surname" title="label apellidos">Apellidos: </label></td>
-            <td><input type="text" id="surname" name="td_surname" title="input surname" required/></td>
+            <td><input type="text" id="surname" name="td_surname" title="input surname" required/><span></span></td>
           </tr>
           <tr>
             <td><label for="email" title="label email">Email: </label></td>
-            <td><input type="email" id="email" name="td_email" title="input email" required/></td>
+            <td><input type="email" id="email" name="td_email" title="input email" required/><span></span></td>
           </tr>
           <tr>
             <td><label for="phone" title="label telefono">Teléfono: </label></td>
-            <td><input type="tel" id="phone" name="td_phone" title="input phone" maxlength="9" minlength="9" pattern="\d{9}"/></td>
+            <td><input type="tel" id="phone" name="td_phone" title="input phone" maxlength="9" minlength="9" pattern="\d{9}"/><span></span></td>
           </tr>
           <tr>
             <td><label for="birthday" title="label fecha nacimiento">Fecha de Nacimiento: </label></td>
-            <td><input type="date" id="birthday" name="td_birthday" title="input date" required/></td>
+            <td><input type="date" id="birthday" name="td_birthday" title="input date" required/><span></span></td>
           </tr>
           <tr>
             <td><label for="age" title="label edad">Edad: </label></td>
-            <td><input type="number" id="age" name="td_age" title="input age" min="16" max="130"/></td>
+            <td><input type="number" id="age" name="td_age" title="input age" min="16" max="130"/><span></span></td>
           </tr>
         </table>
       </fieldset>
@@ -165,15 +180,15 @@
         <table>
           <tr>
             <td><label for="color" title="label color">Color Preferido: </label></td>
-            <td><input type="color" id="color" name="td_color" title="input color"/></td>
+            <td><input type="color" id="color" name="td_color" title="input color"/><span></span></td>
           </tr>
           <tr>
             <td><label for="month" title="label inicio curso">Inicio Estudios: </label></td>
-            <td><input type="month" id="month" name="td_month" max="2022-09" title="input moth"/></td>
+            <td><input type="month" id="month" name="td_month" max="2022-09" title="input moth"/><span></span></td>
           </tr>
           <tr>
             <td><label for="pagWeb" title="label pagina web">Pág. Web: </label></td>
-            <td><input type="url" id="pagWeb" name="td_pagWeb" title="input pagWeb" pattern="https://.*"/>
+            <td><input type="url" id="pagWeb" name="td_pagWeb" title="input pagWeb" pattern="https://.*"/><span></span>
             </td>
           </tr>
           <tr>
@@ -183,11 +198,12 @@
                 <option value="21-22">2021/2022</option>
                 <option value="22-23">2022/2023</option>
               </select>
+              <span></span>
             </td>
           </tr>
           <tr>
             <td><label for="satisfacción" title="label nivel satisfaccion">Nivel de satisfacción: </label></td>
-            <td><input type="range" id="satisfacción" name="td_satisfacción" title="input nivelSatisfaccion" min="0" max="10" step="0.5"/></td>
+            <td><input type="range" id="satisfacción" name="td_satisfacción" title="input nivelSatisfaccion" min="0" max="10" step="0.5"/><span></span></td>
           </tr>
         </table>
       </fieldset>
@@ -196,11 +212,11 @@
         <table>
             <tr>
                 <td> <label for="password" title="label password">Contraseña actual: </label></td>
-                <td><input type="password" id="password" name="td_password" title="input password"></td>
+                <td><input type="password" id="password" name="td_password" title="input password"><span></span></td>
             </tr>
             <tr>
                 <td><label for="checkConciones" title="label check condiciones" style="font-size: smaller">Comprendo la importancia de establecer contraseñas seguras.</label></td>
-                <td><input type="checkbox" id="checkConciones" name="td_checkConciones" title="input check condiciones"></td>
+                <td><input type="checkbox" id="checkConciones" name="td_checkConciones" title="input check condiciones"><span></span></td>
             </tr>
         </table>
       </fieldset>
