@@ -123,6 +123,10 @@ main h1, h2{
     font-family: "Permanent Marker";
 }
 
+.mobile{
+    display: none;
+}
+
 /*4. FOOTER*/
 
 footer {
