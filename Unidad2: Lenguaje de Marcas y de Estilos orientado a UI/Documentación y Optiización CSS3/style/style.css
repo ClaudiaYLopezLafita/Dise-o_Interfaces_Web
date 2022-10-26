@@ -1,0 +1,147 @@
+/*
+Project: Aplicacion Web para DIW
+Version: 1.0
+Last change: 24.10.2022
+Assigned to: Claudia Y Lopez Lafita
+
+[TABLA DE CONTENIDOS]
+1. Header > nav
+3. Navbread
+2. Main
+4. Footer
+5. Responsive
+
+[CÓDIGOS DE COLOR]
+
+[FUENTES Y TIPOGRAFIAS]
+
+--------------------------------------------------------------------------------------------------
+*/
+
+/*Reglas-AT*/
+
+@charset "UTF-8";
+
+/* permanent-marker-regular - latin */
+@font-face {
+    font-family: "Permanent Marker";
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/permanent-marker-v16-latin-regular.eot'); /* IE9 Compat Modes */
+  }
+
+* {
+    box-sizing: border-box;
+}
+  
+body{
+    background-color: white;
+    width: 80%;
+    margin-left: 12%;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+
+
+/*1. HEADER > NAV STYLE*/
+
+ul {
+    list-style-type: none;
+    position: sticky;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:#D0D3D4 ;
+}
+
+li {
+    float: left;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+li a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+  
+li a.active {
+    color: white;
+    background-color: black ;
+}
+
+nav li:nth-child(2){
+    margin-left: 27%;
+}
+
+nav input{
+    margin-top: 5.5%;
+    margin-left: 9%;
+}
+
+.link-1{background-color: #F7DC6F ;}
+.link-2{background-color: #F8C471 ;}
+.link-3{background-color: #F0B27A;}
+.link-4{background-color: #E59866;}
+
+nav li:not(:first-child) a:nth-child(-n+2)::after{
+    content: "  🔽";
+    color: black;
+}
+
+  
+/*2. NAVBREAD*/
+
+.navbread ul{
+    background-color: #FAE5D3 ;
+    border-bottom:1px solid lightgrey;
+}
+
+.navbread a {
+    color: black;
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+.navbread li:first-child{
+    margin-left: 3%;
+}
+
+/*3. MAIN*/
+
+main{
+    padding-bottom: 20%;
+    padding-top: 20%;
+    text-align: center;
+    background-color: #FAE5D3 ;
+}
+
+main h1, h2{
+    color: green;
+    font-family: "Permanent Marker";
+}
+
+/*4. FOOTER*/
+
+footer {
+    align-items: center;
+    border-top: 1px solid #504f4f;
+    display: flex;
+    grid-column: 1 / 5;
+    grid-row: 4 / 5;
+    justify-content: space-between;
+    padding: 2em;
+}
+
+footer p{
+    margin: 2px;
+}
+  
+footer img {
+    width: 50px;
+}
+
+
+
