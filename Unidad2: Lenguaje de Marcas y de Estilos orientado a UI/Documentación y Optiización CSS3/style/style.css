@@ -1,10 +1,11 @@
 /*
 Project: Aplicacion Web para DIW
 Version: 1.0
-Last change: 24.10.2022
+Last change: 31.10.2022
 Assigned to: Claudia Y Lopez Lafita
 
 [TABLA DE CONTENIDOS]
+
 1. Header > nav
 3. Navbread
 2. Main
@@ -24,11 +25,10 @@ Assigned to: Claudia Y Lopez Lafita
 
 /* permanent-marker-regular - latin */
 @font-face {
-    font-family: "Permanent Marker";
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/permanent-marker-v16-latin-regular.eot'); /* IE9 Compat Modes */
-  }
+    font-family: "My Font Name";
+    src: url("assets/myfontname.ttf") format("truetype");
+}
+
 
 * {
     box-sizing: border-box;
@@ -66,6 +66,10 @@ li a {
     padding: 14px 16px;
     text-decoration: none;
 }
+
+li a:visited{
+    color: #2874A6;
+} 
   
 li a.active {
     color: white;
@@ -78,7 +82,7 @@ nav li:nth-child(2){
 
 nav input{
     margin-top: 5.5%;
-    margin-left: 9%;
+    margin-left: 5%;
 }
 
 .link-1{background-color: #F7DC6F ;}
@@ -88,7 +92,6 @@ nav input{
 
 nav li:not(:first-child) a:nth-child(-n+2)::after{
     content: "  🔽";
-    color: black;
 }
 
   
@@ -120,7 +123,7 @@ main{
 
 main h1, h2{
     color: green;
-    font-family: "Permanent Marker";
+    font-family: "My Font Name"; 
 }
 
 .mobile{
@@ -146,6 +149,3 @@ footer p{
 footer img {
     width: 50px;
 }
-
-
-

@@ -1,0 +1,25 @@
+/*
+Project: Aplicacion Web para DIW
+Version: 1.0
+Last change: 31.10.2022
+Assigned to: Claudia Y Lopez Lafita
+
+[TABLA DE CONTENIDOS]
+
+1. Main
+
+[CÓDIGOS DE COLOR]
+
+[FUENTES Y TIPOGRAFIAS]
+
+--------------------------------------------------------------------------------------------------
+*/
+
+main h1, h2{
+    color: blue;
+    font-family: "Permanent Marker";
+}
+
+.mobile{
+    display: none;
+}
