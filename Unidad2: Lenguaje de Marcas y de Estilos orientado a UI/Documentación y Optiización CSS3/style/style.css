@@ -23,11 +23,8 @@ Assigned to: Claudia Y Lopez Lafita
 
 @charset "UTF-8";
 
-/* permanent-marker-regular - latin */
-@font-face {
-    font-family: "My Font Name";
-    src: url("assets/myfontname.ttf") format("truetype");
-}
+/* font style */
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
 
 
 * {
@@ -67,7 +64,7 @@ li a {
     text-decoration: none;
 }
 
-li a:visited{
+a:visited{
     color: #2874A6;
 } 
   
@@ -123,12 +120,12 @@ main{
 
 main h1, h2{
     color: green;
-    font-family: "My Font Name"; 
+    font-family: 'Indie Flower', cursive;
 }
 
-.mobile{
+/* .mobile{
     display: none;
-}
+} */
 
 /*4. FOOTER*/
 
@@ -148,4 +145,12 @@ footer p{
   
 footer img {
     width: 50px;
+}
+
+@media screen and (min-width: 480px) {
+
+    .mobile{
+        display: none;
+    }
+
 }
