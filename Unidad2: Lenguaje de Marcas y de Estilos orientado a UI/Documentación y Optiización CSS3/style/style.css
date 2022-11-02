@@ -1,30 +1,52 @@
 /*
 Project: Aplicacion Web para DIW
 Version: 1.0
-Last change: 31.10.2022
+Last change: 02.11.2022
 Assigned to: Claudia Y Lopez Lafita
 
-[TABLA DE CONTENIDOS]
+--------------------[TABLA DE CONTENIDOS]
 
-1. Header > nav
+1. Reglas-AT
+2. Header > nav
 3. Navbread
-2. Main
-4. Footer
-5. Responsive
+4. Main
+5. Footer
+6. Responsive
 
-[CÓDIGOS DE COLOR]
+----------------------[CÓDIGOS DE COLOR]------------------------
 
-[FUENTES Y TIPOGRAFIAS]
+body: white
+
+nav: #D0D3D4
+
+nav div1:#F7DC6F
+nav div2:#F8C471 
+nav div3:#F0B27A
+nav div4:#E59866
+nav div active: black 
+
+a:active: #2874A6
+
+main background-color:#FAE5D3 
+h1,h2: green
+
+border1:lightgrey;
+border2: #504f4f
+
+----------------------[FUENTES Y TIPOGRAFIAS]-------------------
+
+h1 y h2: Indie Flower
 
 --------------------------------------------------------------------------------------------------
 */
 
-/*Reglas-AT*/
+/*1. REGLAS-AT*/
 
 @charset "UTF-8";
-
 /* font style */
 @import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+/*import mobile.ss*/
+@import url('mobile.css') screen and (min-width: 480px);
 
 
 * {
@@ -39,7 +61,7 @@ body{
 }
 
 
-/*1. HEADER > NAV STYLE*/
+/*2. HEADER > NAV STYLE*/
 
 ul {
     list-style-type: none;
@@ -74,7 +96,7 @@ li a.active {
 }
 
 nav li:nth-child(2){
-    margin-left: 27%;
+    margin-left: 20%;
 }
 
 nav input{
@@ -91,8 +113,7 @@ nav li:not(:first-child) a:nth-child(-n+2)::after{
     content: "  🔽";
 }
 
-  
-/*2. NAVBREAD*/
+/*3. NAVBREAD*/
 
 .navbread ul{
     background-color: #FAE5D3 ;
@@ -109,11 +130,11 @@ nav li:not(:first-child) a:nth-child(-n+2)::after{
     margin-left: 3%;
 }
 
-/*3. MAIN*/
+/*4. MAIN*/
 
 main{
-    padding-bottom: 20%;
-    padding-top: 20%;
+    padding-bottom: 15%;
+    padding-top: 15%;
     text-align: center;
     background-color: #FAE5D3 ;
 }
@@ -123,11 +144,7 @@ main h1, h2{
     font-family: 'Indie Flower', cursive;
 }
 
-/* .mobile{
-    display: none;
-} */
-
-/*4. FOOTER*/
+/*5. FOOTER*/
 
 footer {
     align-items: center;
@@ -145,12 +162,4 @@ footer p{
   
 footer img {
     width: 50px;
-}
-
-@media screen and (min-width: 480px) {
-
-    .mobile{
-        display: none;
-    }
-
 }

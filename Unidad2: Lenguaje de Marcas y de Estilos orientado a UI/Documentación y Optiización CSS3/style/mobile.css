@@ -1,26 +1,28 @@
 /*
 Project: Aplicacion Web para DIW
 Version: 1.0
-Last change: 31.10.2022
+Last change: 02.11.2022
 Assigned to: Claudia Y Lopez Lafita
 
 [TABLA DE CONTENIDOS]
 
-1. Main
+1. Header > nav
+3. Navbread
+2. Main
+4. Footer
+5. Responsive
 
 [CÓDIGOS DE COLOR]
 
-h1 y h2: blue
-
 [FUENTES Y TIPOGRAFIAS]
+
+h1 y h2: Indie Flower
 
 --------------------------------------------------------------------------------------------------
 */
 
-/*import mobile.ss*/
-@import url('mobile.css') screen and (min-width: 480px);
+/*2. MAIN*/
 
-main h1, h2{
-    color: blue;
-    font-family: "Indie Flower";
+.mobile{
+    display: none;
 }
