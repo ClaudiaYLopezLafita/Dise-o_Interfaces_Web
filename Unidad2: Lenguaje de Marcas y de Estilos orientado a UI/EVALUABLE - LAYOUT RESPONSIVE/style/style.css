@@ -1,7 +1,7 @@
 /*
 Project: Layout responsive
 Version: 1.0
-Last change: 11.11.2022
+Last change: 16.11.2022
 Assigned to: Claudia Y Lopez Lafita
 
 --------------------[TABLA DE CONTENIDOS]----------------------
@@ -14,9 +14,13 @@ Assigned to: Claudia Y Lopez Lafita
 
 ----------------------[CÓDIGOS DE COLOR]------------------------
 
-Header y footer backgroud-color:  #C41010
-Texto header: #fff
-
+sombra de rojo:  #C41010
+blanco: #fff
+beckers Lovikagrå 505: #D9D9D9
+negro: black
+variacion Pantone / PMS 195 UP: #835c5c
+humo blanco: whitesmoke
+Ford Alberta Blue: #050A30
 
 ----------------------[FUENTES Y TIPOGRAFIAS]-------------------
 
@@ -178,7 +182,7 @@ footer {
 footer p{
     margin: 2px;
 }
-  
+
 footer img {
     width: 50px;
 }
