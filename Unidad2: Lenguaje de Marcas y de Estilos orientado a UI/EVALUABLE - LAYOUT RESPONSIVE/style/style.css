@@ -6,37 +6,68 @@ Assigned to: Claudia Y Lopez Lafita
 
 --------------------[TABLA DE CONTENIDOS]----------------------
 
+1. GENERAL
+2. HEADER Y NAV
+3. SIDEBAR Y ARTICLE
+4. FOOTER
+5. RESPONSIVE MOBILE
 
 ----------------------[CÓDIGOS DE COLOR]------------------------
+
+Header y footer backgroud-color:  #C41010
+Texto header: #fff
 
 
 ----------------------[FUENTES Y TIPOGRAFIAS]-------------------
 
-
+Hearder: 'Racing Sans One', cursive
+.container: 'Montserrat', sans-serif
 ----------------------------------------------------------------
 */
 
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&display=swap');
+
+/*1. GENERAL*/
 .container {
     width: 90%;
     display: grid;
     grid-gap: 10px;
     margin: 3% 3%;
+    font-family: 'Montserrat', sans-serif;
 }
 
+/*2. HEADER Y NAV*/
 header {
-    background-color: #D9D9D9;
+    background-color: #C41010;
     grid-column: 1/13;
     grid-row:1;
     text-align: center;
     padding: 0.5em;
+    font-family: 'Racing Sans One', cursive;
+    -webkit-text-stroke-color: #fff;
 }
 
-nav{
-    background-color: lightsteelblue;
+h1{
+    color: white;
+    font-size: 50px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+nav {
+    background-color: #d9d9d9;
+    border: 1px dashed black;
     grid-column: 1/13;
     grid-row:2;
     padding: 0.5em;
-    justify-content: center;
+    justify-content: space-between;
+    justify-items: center;
+}
+
+a{
+    text-decoration:none;
+    color: black;
 }
 
 nav, .menu, .login{
@@ -45,46 +76,103 @@ nav, .menu, .login{
 }
 
 nav div div:not(:last-child){
-    padding-right: 3%;
+    padding-right: 5%;
 }
 
-nav div button:last-child {
-    justify-content: flex-end; 
+.menu{
+    margin-left: 30%;
+    margin-top: 1.5%;
 }
-/*STYLE "BODY"*/
 
-article{
-    background-color: #FDEBD0;
+button{
+    background-image: linear-gradient(#835c5c, #FF1616);
+    border: 0;
+    border-radius: 4px;
+    box-shadow: rgba(0, 0, 0, .3) 0 5px 15px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    font-family: Montserrat,sans-serif;
+    font-size: .9em;
+    margin: 5px;
+    padding: 10px 15px;
+    text-align: center;
+    user-select: none;
+    touch-action: manipulation;
+}
+
+/*3. SIDEBAR Y ARTICLES*/
+
+.articulos{
+    background-color: whitesmoke;
     grid-column: 1 / 10;
     grid-row:3;
     padding: 2em;
+    border-radius: 2%;
+}
+
+hr{
+    border: 1.5px solid #050A30;
+    background-color: #050A30
+}
+
+article{
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-radius: 2%;
 }
 
 article header, article footer{
-    padding: 1em;
+    padding: 0.5em;
+    background-color: #D9D9D9;
 }
 
-.aside{
-    height: 60%;
+article header{
+    font-size: large;
+}
+
+article #abstras{
+    font-style: oblique;
+}
+
+section img{
+    width:-webkit-fill-available;
+    height: 250px;
+}
+
+section, aside{
+    margin: 10px;
+}
+
+aside{
+    border: 0.5px solid black;
+    border-radius: 2%;
+    background-color: #d9d9d9;
+    padding: 10px;
+    height:150px;
+    width:150px;
+}
+
+.sidebar{
     display: flex ;
     flex-direction: column;
-    background-color: lightblue;
+    background-color: #050A30;
     grid-column: 10/13;
     grid-row:3;
-    padding: 2em;
+    padding: 1em;
+    border-radius: 2%;
 }
 
-
-/*STYLE FOOTER*/
+/*4. FOOTER*/
 footer {
-    background-color: lightgray;
+    background-color: #C41010;
     grid-column: 1/13;
     grid-row:4;
     align-items: center;
-    /* border-top: 1px solid white; */
     display: flex;
     justify-content: space-between;
-    padding: 2em;
+    padding: 1.5em;
+    color: #fff;
 }
 
 footer p{
@@ -93,4 +181,14 @@ footer p{
   
 footer img {
     width: 50px;
+}
+
+/*5. RESPONSIVE MOBILE*/
+
+@media screen and (min-width: 375px) and (max-width: 667px) and (orientation : portrait) {
+
+    .container{
+        display: flex;
+        flex-direction: column
+    }
 }
