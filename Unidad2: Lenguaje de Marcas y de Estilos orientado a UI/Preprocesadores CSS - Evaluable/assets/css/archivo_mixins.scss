@@ -1,0 +1,41 @@
+// Ejercicio 6:
+
+@mixin lefTop {
+    left: 0;
+    top: 0;
+}
+
+@mixin leftBottom ($left,$bottom) {
+    left: $left;
+    bottom: $bottom;
+}
+
+// Ejercicio 9:
+
+@mixin borderStyle($tipo,$pixeles) {
+    @if $tipo == border {
+        border: $pixeles solid #ccc !important;
+    } @else if $tipo == top {
+        border-top: $pixeles solid #ccc !important;
+    } @else if $tipo == bottom {
+        border-bottom: $pixeles solid #ccc !important;
+    } @else if $tipo == left {
+        border-left: $pixeles solid #ccc !important;
+    } @else if $tipo == right {
+        border-right: $pixeles solid #ccc !important;
+    }
+}
+
+// Ejercicio 12:
+
+@mixin color ($codeColor) {
+    color: $codeColor !important;
+}
+
+@mixin borderColor ($codeColor) {
+    border-color: $codeColor !important;
+}
+
+@mixin backgroudColor ($codeColor) {
+    background-color: $codeColor !important;
+}

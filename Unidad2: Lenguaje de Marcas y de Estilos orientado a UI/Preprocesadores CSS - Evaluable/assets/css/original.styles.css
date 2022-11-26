@@ -258,8 +258,8 @@ a {
 * DIW: Parte 2: 
 * Usar anidamientos de la forma más optima posible
 */
-.w3-table,
-.w3-table-all {
+
+.w3-table, .w3-table-all {
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
