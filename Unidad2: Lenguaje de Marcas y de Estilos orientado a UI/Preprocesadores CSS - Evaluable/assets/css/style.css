@@ -209,13 +209,13 @@ h3 {
   font-size: 24px; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 20px; }
 
 h5 {
-  font-size: 12px; }
+  font-size: 18px; }
 
 h6 {
-  font-size: 6px; }
+  font-size: 16px; }
 
 /*
 * DIW: FIN Parte 1. 
@@ -616,82 +616,55 @@ a {
 *  
 */
 @media (min-width: 601px) {
-  .w3-col.m1 {
+  .w3-col.m-1 {
     width: 8.33333%; }
-
-  .w3-col.m2 {
-    width: 16.66666%; }
-
-  .w3-col.m3,
-  .w3-quarter {
-    width: 24.99999%; }
-
-  .w3-col.m4,
-  .w3-third {
-    width: 33.33333%; }
-
-  .w3-col.m5 {
-    width: 41.66666%; }
-
-  .w3-col.m6,
-  .w3-half {
-    width: 49.99999%; }
-
-  .w3-col.m7 {
-    width: 58.33333%; }
-
-  .w3-col.m8,
-  .w3-twothird {
-    width: 66.66666%; }
-
-  .w3-col.m9,
-  .w3-threequarter {
-    width: 74.99999%; }
-
-  .w3-col.m10 {
-    width: 83.33333%; }
-
-  .w3-col.m11 {
-    width: 91.66666%; }
-
-  .w3-col.m12 {
-    width: 99.99999%; } }
+  .w3-col.m-2 {
+    width: 16.66333%; }
+  .w3-col.m-3 {
+    width: 24.99333%; }
+  .w3-col.m-4 {
+    width: 33.32333%; }
+  .w3-col.m-5 {
+    width: 41.65333%; }
+  .w3-col.m-6 {
+    width: 49.98333%; }
+  .w3-col.m-7 {
+    width: 58.31333%; }
+  .w3-col.m-8 {
+    width: 66.64333%; }
+  .w3-col.m-9 {
+    width: 74.97333%; }
+  .w3-col.m-10 {
+    width: 83.30333%; }
+  .w3-col.m-11 {
+    width: 91.63333%; }
+  .w3-col.m-12 {
+    width: 99.96333%; } }
 @media (min-width: 993px) {
-  .w3-col.l1 {
+  .w3-col.l-1 {
     width: 8.33333%; }
-
-  .w3-col.l2 {
-    width: 16.66666%; }
-
-  .w3-col.l3 {
-    width: 24.99999%; }
-
-  .w3-col.l4 {
-    width: 33.33333%; }
-
-  .w3-col.l5 {
-    width: 41.66666%; }
-
-  .w3-col.l6 {
-    width: 49.99999%; }
-
-  .w3-col.l7 {
-    width: 58.33333%; }
-
-  .w3-col.l8 {
-    width: 66.66666%; }
-
-  .w3-col.l9 {
-    width: 74.99999%; }
-
-  .w3-col.l10 {
-    width: 83.33333%; }
-
-  .w3-col.l11 {
-    width: 91.66666%; }
-
-  .w3-col.l12 {
-    width: 99.99999%; } }
+  .w3-col.l-2 {
+    width: 16.66333%; }
+  .w3-col.l-3 {
+    width: 24.99333%; }
+  .w3-col.l-4 {
+    width: 33.32333%; }
+  .w3-col.l-5 {
+    width: 41.65333%; }
+  .w3-col.l-6 {
+    width: 49.98333%; }
+  .w3-col.l-7 {
+    width: 58.31333%; }
+  .w3-col.l-8 {
+    width: 66.64333%; }
+  .w3-col.l-9 {
+    width: 74.97333%; }
+  .w3-col.l-10 {
+    width: 83.30333%; }
+  .w3-col.l-11 {
+    width: 91.63333%; }
+  .w3-col.l-12 {
+    width: 99.96333%; } }
 /*
 * DIW: DIW: FIN Parte 4. 
 */
