@@ -4,85 +4,122 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LAYOUT RESPONSIVE </title>
-
-    <!--css file-->
-    <link rel="stylesheet" href="./style/style.css">
-    <!-- iconify src-->
+    <title>Imperial</title>
+    <!-- css files -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- end js files -->
     <script src="https://code.iconify.design/iconify-icon/1.0.1/iconify-icon.min.js"></script>
 </head>
 <body>
     <div class="container">
-        <header> <h1>IMPERIAL LAYOUT</h1></header>
+        <video id="myVideo" autoplay muted loop>
+            <source src="./assets/images/video_entregable.mp4" type="video/mp4">
+        </video>
+        <div class="content" id="textContent">
+            <h5>Runners</h5>
+            <p>Lorem ipsum dolor sit amet, an his etiam torquatos. Tollit soleat phaedrum te duo, eum cu recteque expetendis neglegentur. Cu mentitum maiestatis persequeris pro, pri ponderum tractatos ei. Id qui nemore latine molestiae, ad mutat oblique delicatissimi pro.</p>
+            <button id="myBtn" onclick="pauseVideo()">Pause</button>
+            <button id="myBtn2" onclick="closeVideo()">Close</button>
+        </div>
         <nav>
-            <div class="menu">
-                <div><a href="">Inicio</a></div>
-                <div><a href="">Categorias</a></div>
-                <div><a href="">Nosotros</a></div>
-                <div><a href="">Contacto</a></div>
-            </div>
-            <div class="buttons">
-                <button type="button">Login</button>
-                <button type="button">Registro</button>
+            <a class="navbar-logo" href="home.html">
+                <img src="./assets/images/logoHeader.svg" alt="Avatar Logo"> 
+            </a>
+            <div class="container-nav">
+                <ul class="navbar-menu">
+                    <li>
+                        <a class="nav-link" href="#"  id="home">
+                            <iconify-icon icon="icomoon-free:home3" style="color: black;"></iconify-icon>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" id="news">
+                            <iconify-icon icon="icomoon-free:newspaper" style="color: black;"></iconify-icon>
+                            Noticias
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#" id="login">
+                            <iconify-icon icon="icon-park-solid:calendar" style="color: black;" width="16" height="16"></iconify-icon>
+                            Calendario
+                        </a>
+                    </li>
+                    <li >
+                        <a class="nav-link" href="#" id="registro">
+                            <iconify-icon icon="mdi:user-settings" style="color: black;" width="17" height="17"></iconify-icon>
+                            Login
+                        </a>
+                    </li>
+                </ul>
+                <form class="nav-search">
+                    <input class="form-text" type="text" placeholder="Search" >
+                    <button class="btn" type="button">Search </button>
+                </form>
             </div>
         </nav>
-        <div class="articulos">
-        <article>
-            <header>Titulo</header>
-            <section id="abstras">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim minima esse aliquid dolorem quidem perferendis repudiandae quaerat eius inventore eveniet voluptas, ex modi, natus quia. Minus laboriosam optio officia!
-                </p>
-                <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur et repellat eius vero at excepturi recusandae temporibus, voluptate alias iusto tempore laudantium numquam provident itaque molestias labore aspernatur laboriosam possimus.
-                </p>
-            </section>
-            <section>
-                <img src="./images/runner1.png" alt="pies corredor" >
-            </section>
-            <footer><a href=""> Ver mas --></a></footer>
-        </article>
-        <hr>
-        <article>
-            <header>Titulo</header>
-            <section id="abstras">
-                <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim minima esse aliquid dolorem quidem perferendis repudiandae quaerat eius inventore eveniet voluptas, ex modi, natus quia. Minus laboriosam optio officia!
-                </p>
-                <p>
-                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur et repellat eius vero at excepturi recusandae temporibus, voluptate alias iusto tempore laudantium numquam provident itaque molestias labore aspernatur laboriosam possimus.
-                </p>
-            </section>
-            <section>
-                <img src="./images/runner2.png" alt="ganador" >
-            </section>
-            <footer><a href=""> Ver mas -></a></footer>
-        </article>
-        </div>
-        <div class="sidebar">
-            <aside>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-            </aside>
-            <aside>
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi quibusdam veritatis maiores, 
-            </aside>
+        <div class="main">
+            <div class="principal">
+                <h1>BLOG</h1>
+                <hr>
+                <div class="articulos">
+                    <article>
+                        <h2>Titulo</h2>
+                        <section id="abstras">
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim minima esse aliquid dolorem quidem perferendis repudiandae quaerat eius inventore eveniet voluptas, ex modi, natus quia. Minus laboriosam optio officia!
+                            </p>
+                            <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur et repellat eius vero at excepturi recusandae temporibus, voluptate alias iusto tempore laudantium numquam provident itaque molestias labore aspernatur laboriosam possimus.
+                            </p>
+                        </section>
+                        <section>
+                            <img src="" alt="pies corredor" >
+                        </section>
+                        <p><a href=""> Ver mas --></a></footer>
+                    </article>
+                    <article>
+                        <h2>Titulo</h2>
+                        <section id="abstras">
+                            <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur enim minima esse aliquid dolorem quidem perferendis repudiandae quaerat eius inventore eveniet voluptas, ex modi, natus quia. Minus laboriosam optio officia!
+                            </p>
+                            <p>
+                            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur et repellat eius vero at excepturi recusandae temporibus, voluptate alias iusto tempore laudantium numquam provident itaque molestias labore aspernatur laboriosam possimus.
+                            </p>
+                        </section>
+                        <section>
+                            <img src="" alt="ganador" >
+                        </section>
+                        <p><a href=""> Ver mas -></a></p>
+                    </article>
+                    </div>
+            </div>
+            <div class="sidebar">
+                <aside class="banner">
+                    <img src="./assets/images/banner.png" alt="banner-descuento">
+                </aside>
+                <aside class="info">
+                    <img src="./assets/images/tweets.png" alt="tweets">
+                </aside>
+            </div>
         </div>
         <footer>
             <address>
-                <p>C/ Principal</p>
-                <p>Sevilla</p>
-                <p>+34 999 999 999</p>
-                <p>ejemplo_Email@gmail.com</p>
+                <p><iconify-icon icon="material-symbols:location-on" style="color: black;" width="16" height="16"></iconify-icon> C/ Principal, Sevilla</p>
+                <p><iconify-icon icon="ic:baseline-local-phone" style="color: black;" width="16" height="16"></iconify-icon> +34 999 999 999</p>
+                <p><iconify-icon icon="entypo:email" style="color: black;" width="16" height="16"></iconify-icon> ejemplo@gmail.com</p>
             </address>
-            <div class="autoria">
-                <p>Este es un ejemplo de @clodo para DIW </p>
+            <div class="logo">
+                <img src="./assets/images/logoFooter.svg" alt="logo2">
             </div>
             <div class="socialNet">
-                <iconify-icon icon="teenyicons:instagram-outline" width="40"></iconify-icon>
-                <iconify-icon icon="uiw:facebook"  width="40" ></iconify-icon>
-                <iconify-icon icon="fa6-brands:square-pinterest" width="40"></iconify-icon>
+                <iconify-icon icon="teenyicons:instagram-outline" width="35"></iconify-icon>
+                <iconify-icon icon="uiw:facebook"  width="35" ></iconify-icon>
+                <iconify-icon icon="fa6-brands:square-pinterest" width="35"></iconify-icon>
             </div>
         </footer>
     </div>
+    <script defer src="./assets/js/utils.js"></script>
 </body>
 </html>

@@ -1,0 +1,252 @@
+/*
+Project: UD03-T01-EVALUABLE-Implantación de Contenidos Multimedia
+Version: 1.0
+Last change: 06.12.2022
+Assigned to: Claudia Y Lopez Lafita
+
+--------------------[TABLA DE CONTENIDOS]----------------------
+
+1. GENERAL
+2. VIDEO RULES
+2. NAVBAR RULES
+3. MAIN RULES
+4. PRINCIPAL RULES
+5. SIDEBAR RULES
+6. FOOTER RULES
+
+----------------------[CÓDIGOS DE COLOR]------------------------
+
+sombra de rojo:  #C41010
+blanco: #fff
+beckers Lovikagrå 505: #D9D9D9
+negro: black
+variacion Pantone / PMS 195 UP: #835c5c
+humo blanco: whitesmoke
+Ford Alberta Blue: #050A30
+
+----------------------[FUENTES Y TIPOGRAFIAS]-------------------
+
+'Racing Sans One', cursive
+'Montserrat', sans-serif
+----------------------------------------------------------------
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background: #050a30;
+  font-family: 'Montserrat', sans-serif;
+  color: #333;
+  margin: 0;
+}
+/*Starts video rules*/
+
+#myVideo {
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+/*Creamos una clase para ocultar cuando se pulse el boton*/
+.videoNone {
+  display: none;
+}
+  
+.content {
+  position:fixed;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+  
+#myBtn, #myBtn2 {
+  width: 200px;
+  font-size: 18px;
+  padding: 10px;
+  border: none;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+#myBtn:hover, #myBtn2:hover {
+  background: #ddd;
+  color: black;
+} 
+
+
+/* Starts Navbar rules */
+
+nav{
+  position: relative;
+  display: flex;
+  background-color:#ffff;
+  height: 80px;
+  -webkit-box-align: center;
+  align-items: center;
+}
+
+.navbar-logo{
+  width: 30%;
+}
+
+nav img{
+  width: 35%; 
+  height: 80%;
+  margin-left: 20%;
+}
+
+.container-nav{
+  width: 75%;
+  display: flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  justify-content: space-around !important;
+}
+
+nav ul{
+  padding: 0;
+}
+
+nav li{
+    display: inline;
+    list-style-type: none;
+    text-align: -webkit-match-parent;
+    align-items: center;
+}
+
+li a{
+  padding: 0.5rem;
+  color: #000;
+  text-decoration: none;
+  background-color: transparent;
+}
+nav button{
+  height: 35px;
+  background-color: #FF1616;
+  color: #ffff;
+  font-weight: bold;
+  border-radius: 10px;
+  margin-left: 10px;
+}
+
+/* End Navbar rules */
+
+/* Starts main rules*/
+
+.main{
+  width: 98.5%;
+  display: flex;
+  margin: 10px ;
+}
+
+/* End main rules*/
+
+/* Start .principal rules */
+
+.principal{
+  background-color: #D9D9D9;
+  padding: 2em;
+  margin: 10px 30px;
+  border-radius: 20px;
+  width: 70%;
+}
+
+h1{
+  font-family: 'Racing Sans One', cursive;
+  color: #050a30;
+  text-align: center;
+  margin: 0;
+}
+
+hr{
+  background-color:red;
+  border: 2px solid red;
+  border-radius: 20%;
+  width: 15%;
+  margin: 0 auto;
+}
+
+article{
+  margin-top: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+article h2{
+  font-family: 'Racing Sans One';
+
+}
+
+/* End .principal rules*/
+
+/* Start .sidebar rules */
+
+.sidebar{
+  display: flex;
+  flex-direction: column;
+  background-color: #D9D9D9;
+  padding: 1em;
+  border-radius: 20px;
+  margin: 10px 0px;
+  width: 25%px;
+}
+
+.banner img{
+  height: 455px;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+.banner:hover img{
+  -webkit-transform:scale(0.9);
+  transform:scale(0.9);
+  transition: all ease 0.2s;
+}
+
+.banner{overflow:hidden;}
+
+.info{
+  margin-top: 15px;
+}
+
+/* End .sidebar rules*/
+
+/* Starts footer rules*/
+
+footer {
+  background-color: #fff;
+  grid-column: 1/13;
+  grid-row:4;
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5em;
+  color: #343a40;
+  border-top: 3px solid #FF1616 ;
+}
+
+footer p{
+  margin: 2px;
+  font-size:medium;
+}
+
+footer img {
+  width: 15%;
+}
+
+.logo{
+  margin:auto;
+  display:block;
+}
+
+/* End footer rules*/
+
+
+
