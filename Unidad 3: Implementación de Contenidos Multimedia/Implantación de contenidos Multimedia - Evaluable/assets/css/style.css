@@ -216,6 +216,14 @@ h1{
   margin: 0;
 }
 
+article{
+  background-color: whitesmoke;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+  font-family: 'Montserrat', sans-serif;
+}
+
 hr{
   background-color:red;
   border: 2px solid red;
@@ -224,14 +232,27 @@ hr{
   margin: 0 auto;
 }
 
-article{
-  margin-top: 25px;
-  font-family: 'Montserrat', sans-serif;
+article img{
+  width: 60%;
+  padding-bottom: 0;
+  margin-bottom:0;
 }
 
 article h2{
   font-family: 'Racing Sans One';
+  margin-bottom: 0px;
+}
 
+article hr{
+  background-color:red;
+  border: 1px solid red;
+  border-radius: 20%;
+  margin-left: 0;
+}
+section .licenciaImg{
+  width: 9%;
+  padding-top: 0;
+  margin-top: 0;
 }
 
 /* End .principal rules*/
@@ -284,8 +305,17 @@ footer p{
   font-size:medium;
 }
 
+footer a{
+  color: #343a40;
+  font-size: small;
+}
+
 footer img {
   width: 15%;
+}
+
+#licencias{
+  margin-left: 40%;
 }
 
 .logo{
