@@ -5,6 +5,7 @@ let content = document.getElementById("textContent");
 
 function closeVideo() {
     video.className = "videoNone";
+    video.muted = true;
     btn.className = "videoNone";
     // h2.className = "videoNone";
     content.className = "videoNone";
