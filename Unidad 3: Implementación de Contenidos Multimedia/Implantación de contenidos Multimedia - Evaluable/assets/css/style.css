@@ -42,12 +42,19 @@ body {
   margin: 0;
 }
 
+.container{
+  width: 100%;
+}
 /*Starts video rules*/
 #myVideo {
+  background-color: black;
   position:fixed;
   right: 0;
-  bottom: 0;
-  width: 1470px;
+  top: 0;
+  width: 100%;
+  height: 110%;
+  /* width: 1400px;
+  height: 700px; */
 }
 
 .videoNone {
@@ -80,7 +87,6 @@ body {
 
 #textAnimation {
   color: #C41010;
-	font-size: xx-large;
 	position: relative;
 	overflow: hidden;
 	padding-bottom: 0.4rem;
@@ -90,12 +96,16 @@ body {
   position: relative;
 	display: block;
 	margin: 0;
-	font-size: 4rem;
+	font-size: 3rem;
 	line-height: 1;
 	transform: translateY(6rem);
 	animation: up 500ms linear forwards;
 	z-index: 1;
 	text-shadow: 0px 1px 1px rgba(255,255,255,1);
+}
+
+p.animation{
+  font-size: 2rem !important;;
 }
 
 .animation::before, .animation::after{
@@ -143,7 +153,7 @@ nav{
 }
 
 .navbar-logo{
-  width: 30%;
+  width: 35%;
 }
 
 nav img{
@@ -178,13 +188,45 @@ li a{
   text-decoration: none;
   background-color: transparent;
 }
-nav button{
+/* nav button{
   height: 35px;
   background-color: #FF1616;
   color: #ffff;
   font-weight: bold;
   border-radius: 10px;
   margin-left: 10px;
+} */
+button{
+  align-items: center;
+  background-color: #FF1616;
+  border: 0;
+  border-radius: 100px;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-flex;
+  font-size: 16px;
+  font-weight: 600;
+  justify-content: center;
+  line-height: 20px;
+  max-width: 480px;
+  min-height: 40px;
+  min-width: 0px;
+  overflow: hidden;
+  padding: 0px;
+  padding-left: 20px;
+  padding-right: 20px;
+  text-align: center;
+  touch-action: manipulation;
+  transition: background-color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, box-shadow 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s, color 0.167s cubic-bezier(0.4, 0, 0.2, 1) 0s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+}
+
+button:hover,
+button:focus { 
+  background-color: #C41010;
+  color: #ffffff;
 }
 
 /* End Navbar rules */
@@ -192,8 +234,9 @@ nav button{
 /* Starts main rules*/
 
 .main{
-  width: 98.5%;
+  width: 100%;
   display: flex;
+  flex-direction: row;
   margin: 10px ;
 }
 
@@ -202,11 +245,12 @@ nav button{
 /* Start .principal rules */
 
 .principal{
+  flex-grow: 8;
   background-color: #D9D9D9;
   padding: 2em;
   margin: 10px 30px;
   border-radius: 20px;
-  width: 70%;
+  width: 180%;
 }
 
 h1{
@@ -233,9 +277,10 @@ hr{
 }
 
 article img{
-  width: 60%;
+  width: 70%;
   padding-bottom: 0;
   margin-bottom:0;
+  margin-left: 145px;
 }
 
 article h2{
@@ -250,9 +295,14 @@ article hr{
   margin-left: 0;
 }
 section .licenciaImg{
-  width: 9%;
+  width: 8%;
   padding-top: 0;
   margin-top: 0;
+}
+
+section a{
+  text-decoration:none;
+  color: black;
 }
 
 /* End .principal rules*/
@@ -266,12 +316,13 @@ section .licenciaImg{
   padding: 1em;
   border-radius: 20px;
   margin: 10px 0px;
-  width: 25%px;
+  width: 75%;
 }
 
 .banner img{
-  height: 455px;
+  width: 80%;
   box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+  margin-left: 10%;
 }
 
 .banner:hover img{
@@ -283,7 +334,9 @@ section .licenciaImg{
 .banner{overflow:hidden;}
 
 .info{
+  width: 95%;
   margin-top: 15px;
+  margin-left: 5%;
 }
 /* End .sidebar rules*/
 
