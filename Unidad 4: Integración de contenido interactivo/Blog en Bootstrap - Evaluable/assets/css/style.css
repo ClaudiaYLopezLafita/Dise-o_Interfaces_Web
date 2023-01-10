@@ -69,7 +69,6 @@ nav img{
     --bs-breadcrumb-divider: '->';
     background-color: #050A30 ;
     margin-bottom: 0px ;
-    font-family: 'Montserrat', sans-serif;
     font-weight: bold;
     color: #ffff;
 }
@@ -112,9 +111,7 @@ nav img{
 .card-body p{
     font-size: small;
     text-align: justify;
-    text-justify: inter-word;
-    font-family: 'Montserrat', sans-serif;
-    
+    text-justify: inter-word;    
 }
 
 .card img{
@@ -208,12 +205,24 @@ nav img{
 }
 
 .carousel-caption {
-    background: rgba(0, 0, 0, 0.35);
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
 } 
+
+.carousel-caption small{
+    font-size: small;
+    margin-left: 4%;
+}
+
+.text-truncate{
+    max-width: 190px;
+}
 
     /*Banner*/
 
-.sidebar img{
+.banner img{
     width: 92.1%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     margin-left: 5%;
