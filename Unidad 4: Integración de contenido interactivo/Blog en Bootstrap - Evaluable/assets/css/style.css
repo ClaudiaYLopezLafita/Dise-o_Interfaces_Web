@@ -112,6 +112,28 @@ nav img{
     text-align: justify;
     text-justify: inter-word;
     font-family: 'Montserrat', sans-serif;
+    
+}
+
+.card img{
+    height: 158.3px;
+}
+
+.card .btn{
+    background-color: #C41010;
+    color: #ffff;
+    font-weight: bold;
+    margin-left: 20%;
+}
+
+.text-truncate-container {
+    width: 250px;
+}
+.text-truncate-container p {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* .card button{
@@ -125,7 +147,7 @@ button:focus {
 }
 
 /*Start aside rules*/
-.banner img{
+.sidebar img{
     width: 75%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     margin-left: 10%;
