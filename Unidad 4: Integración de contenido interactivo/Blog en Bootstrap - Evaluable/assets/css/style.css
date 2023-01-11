@@ -95,7 +95,7 @@ nav img{
 }
 
 .card{
-    width: 17.5rem;
+    width: 15rem;
     border-radius: 20px;
     margin-bottom: 1%;
 }
@@ -108,7 +108,7 @@ nav img{
     font-family: 'Racing Sans One', cursive;
 }
 
-.card-body p{
+.card-body p, .category{
     font-size: small;
     text-align: justify;
     text-justify: inter-word;    
@@ -126,7 +126,7 @@ nav img{
 }
 
 .text-truncate-container {
-    width: 250px;
+    width: 95%;
 }
 .text-truncate-container p {
     -webkit-line-clamp: 3;
@@ -134,10 +134,6 @@ nav img{
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
-
-/* .card button{
-
-} */
 
 .card .btn:hover,
 .card .btn:focus { 
@@ -223,7 +219,7 @@ nav img{
     /*Banner*/
 
 .banner img{
-    width: 92.1%;
+    width: 100%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
     margin-left: 5%;
 }
