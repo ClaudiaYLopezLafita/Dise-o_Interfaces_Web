@@ -18,73 +18,56 @@
     <!-- BODY MODAL-->
     <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            <!-- <div class="modal-header ">
-            </div> -->
-            <div class="modal-body">
-                <div class="col-md-6">
-
-                </div>
-                <div class="col-md-6">
-                    <form>
-                        <!-- Email input -->
-                        <div class="form-outline mb-4">
-                            <input type="email" id="form2Example1" class="form-control" placeholder="Email o name user" />
-                            <label class="form-label" for="form2Example1"></label>
-                        </div>
-                        <!-- Password input -->
-                        <div class="form-outline mb-4">
-                            <input type="password" id="form2Example2" class="form-control" placeholder="Password"/>
-                            <label class="form-label" for="form2Example2"></label>
-                        </div>
-                        <!-- 2 column grid layout for inline styling -->
-                        <div class="row mb-4">
-                            <div class="col d-flex justify-content-center">
-                                <!-- Checkbox -->
-                                <div class="form-check">
-                                    <input class="form-check-input" type="checkbox" value="" id="form2Example31" checked />
-                                    <label class="form-check-label" for="form2Example31"> Remember me </label>
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid h-custom px-0">
+                        <div class="row justify-content-start align-items-start gx-5">
+                            <div class="col-md-7 ml-0 pl-0">
+                                <!-- <img src="./assets/images/mixLogo.png" class="loginImg" alt="Sample image"> -->
+                                <img src="./assets/images/loginImg.jpg" class="loginImg" alt="Sample image">
+                            </div>
+                            <div class="col-md-8 col-lg-6 col-xl-4 ml-2 col-form">
+                                <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h3 class="mt-1">Sign in with</h3>
+                                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-center">
+                                    <button class="btn mb-2"><i class="bi bi-social form-social bi-facebook"></i></button>
+                                    <button class="btn"><i class="bi bi-social form-social bi-twitter"></i></button>
+                                    <button class="btn mb-2"><i class="bi bi-social form-social bi-google"></i></button>                       
                                 </div>
-                            </div>
-                            <div class="col">
-                                <!-- Simple link -->
-                                <a href="#!">Forgot password?</a>
+                                <div class="divider align-items-center my-3">
+                                    <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                                </div>
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
+                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
+                                        <input type="text" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                    </div>
+                                    <div class="mb-2 form-check">
+                                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                                        <label class="form-check-label" for="exampleCheck1"><small>Remember me</small></label>
+                                    </div>
+                                    <a href="#!" class="text-footer">Forgot password?</a>
+                                    <div class="buttons mt-3 d-flex flex-row align-items-center justify-content-center">
+                                        <button type="submit" class="btn-login btn rounded-pill py-1">Login</button>
+                                        <button type="submit" class="btn-cancel btn rounded-pill py-1" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                    </div>
+                                </form>                                
                             </div>
                         </div>
-                        <!-- Submit button -->
-                        <button type="button" class="btn btn-primary btn-block mb-4">Sign in</button>
-                        <!-- Register buttons -->
-                        <div class="text-center">
-                            <p>Not a member? <a href="#!">Register</a></p>
-                            <p>or sign up with:</p>
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="fab fa-facebook-f"></i>
-                            </button>
-                        
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="bi bi-google"></i>
-                            </button>
-                        
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="bi bi-twitter"></i>
-                            </button>
-                        
-                            <button type="button" class="btn btn-link btn-floating mx-1">
-                                <i class="bi bi-facebook"></i>
-                            </button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
             </div>
-        </div>
         </div>
     </div>
     <!-- END BODY MODAL-->
 
     <!-- BODY INDEX -->
-    <div class="container-fluid">
+    <div class="container-fluid px-0">
         <nav class="navbar navbar-expand-lg navbar-light ">
             <div class="container-fluid">
                 <a class="navbar-brand navbar-logo" href="index.html">

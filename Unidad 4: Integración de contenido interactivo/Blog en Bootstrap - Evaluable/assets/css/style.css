@@ -33,9 +33,6 @@ Ford Alberta Blue: #050A30
 
 @import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&display=swap');
-/* .selector-for-some-widget {
-    box-sizing: content-box;
-} */
 
 body{
     font-family: 'Montserrat', sans-serif;
@@ -104,7 +101,7 @@ nav img{
     margin-left: 3%;
 }
 
-.card h5{
+.card h5, h3{
     font-family: 'Racing Sans One', cursive;
 }
 
@@ -118,7 +115,7 @@ nav img{
     height: 158.3px;
 }
 
-.card .btn{
+.card .btn, .btn-cancel{
     background-color: #FF1616;
     color: #ffff;
     font-weight: bold;
@@ -221,5 +218,65 @@ nav img{
 .banner img{
     width: 100%;
     box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
-    margin-left: 5%;
+}
+
+/* Start modal rules*/
+.modal-content{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 20px !important; 
+}
+.modal-body{
+    padding-left: 0;
+    background-color: #050A30;
+    color: #ffffff;
+}
+
+.loginImg{
+    width: 100%;
+}
+
+.col-form{
+    margin-left: 1.5%;
+}
+
+.col-form h3, .col-form a{
+    text-align: center;
+}
+
+h3{
+    border-bottom: solid 2px #FF1616;
+    padding-bottom: 2%;
+}
+
+.form-group{
+    position: relative;
+}
+.form-social{
+    background-color: #050A30;
+}
+
+.input-group-text{
+    background-color: #050A30;
+    color: #ffff;
+    border: none;
+    border-bottom: solid 2px #ffff;
+}
+
+input[type='text']{
+    background: none;
+    border: none;
+    border-bottom: solid 2px #ffff;
+    letter-spacing: 1px;
+}
+
+.btn-close{
+    margin-left: 100%;
+    margin-top: 3%;
+}
+
+.btn-login{
+    background-color: #ffff;
+    color: #050A30;
+    font-weight: bold;
 }
