@@ -263,7 +263,7 @@ h3{
     border-bottom: solid 2px #ffff;
 }
 
-input[type='text']{
+input[type='text'],input[type='password']{
     background: none;
     border: none;
     border-bottom: solid 2px #ffff;
