@@ -115,12 +115,22 @@ nav img{
     height: 158.3px;
 }
 
-.card .btn, .btn-cancel{
+.card .btn, .btn-cancel, .btn-login-nav{
     background-color: #FF1616;
     color: #ffff;
     font-weight: bold;
+}
+
+.btn-register-nav{
+    background-color: #050A30;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.card .btn, .btn-cancel{
     margin-left: 20%;
 }
+
 
 .text-truncate-container {
     width: 95%;
@@ -133,7 +143,7 @@ nav img{
 }
 
 .card .btn:hover,
-.card .btn:focus { 
+.card .btn:focus{ 
     background-color: #C41010;
     color: #ffffff;
 }
@@ -279,4 +289,15 @@ input[type='text'],input[type='password']{
     background-color: #ffff;
     color: #050A30;
     font-weight: bold;
+}
+
+/*Start footer rules*/
+
+footer{
+    border-top:solid 3px #FF1616;
+}
+
+footer a{
+    text-decoration: none;
+    color: black;
 }

@@ -79,26 +79,36 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a type="button" class="nav-link text-dark" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="#">Registro</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class=" active nav-link text-dark" aria-current="page" href="#">Entradas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="#">Nueva Entrada</a>
-                        </li>
-                    </ul>
-                    <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                        <input class="form-control me-1" type="search" placeholder="Buscar" aria-label="Buscar">
-                        <button type="button" class="btn-close" aria-label="Cerrar"></button>
+                <div class="row collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="col-md-6">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" active nav-link text-dark" aria-current="page" href="#">Entradas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Sobre Nosotros</a>
+                            </li>
+                        </ul>
+                        
                     </div>
-                    <i class="bi bi-search" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></i>
+                    <div class="col-md row">
+                        <div>
+                            <button type="submit" class="btn-Add btn-outline-info rounded-pill py-1"><a type="button" class="nav-link text-dark" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">+New</a> </button>
+                            <button type="submit" class="btn-login-nav btn rounded-pill py-1"><a type="button" class="nav-link text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login</a> </button>
+                            <button type="submit" class="btn-register-nav btn rounded-pill py-1"><a type="button" class="nav-link text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Registro</a> </button>
+                        </div>
+                        <!-- <div class="collapse collapse-horizontal" id="collapseWidthExample">
+                            <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button type="button" class="btn-close" aria-label="Cerrar" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></button>
+                        </div>
+                        <i class="bi bi-search" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></i> -->
+                    </div>
                 </div>
             </div>
         </nav>
@@ -283,6 +293,44 @@
         </div>
         <!-- END MAIN -->
         <!-- START FOOTER -->
+        <footer class="pt-4 pb-2">
+            <div class="row">
+                <div class="col-md-5 offset-sm-1 mb-3 pl-0">
+                    <h5>Localizanos</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12681.179418684065!2d-6.0584269!3d37.3828587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca80e208bb71b4d!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Alixar!5e0!3m2!1ses!2ses!4v1673958290706!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Secciones</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1">Home</li>
+                        <li class="nav-item mb-1">Entradas</li>
+                        <li class="nav-item mb-1">Categoria</li>
+                        <li class="nav-item mb-1">Sobre Nosotros</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Etiquetas</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1">Salud</li>
+                        <li class="nav-item mb-1">Anatomía</li>
+                        <li class="nav-item mb-1">Alimentación</li>
+                        <li class="nav-item mb-1">...</li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Categorias</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1">Tips</li>
+                        <li class="nav-item mb-1">Salud</li>
+                        <li class="nav-item mb-1">Eventos</li>
+                        <li class="nav-item mb-1">...</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="d-flex flex-column flex-sm-row justify-content-center pt-3 pb-2 my-2 border-top">
+                <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />. 2023 Alixar, IES.</p>
+            </div>
+        </footer>
         <!-- END FOOTER -->
     </div>
     <!-- END BODY INDEX -->
