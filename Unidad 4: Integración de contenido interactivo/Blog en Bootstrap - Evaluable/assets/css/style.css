@@ -59,7 +59,11 @@ nav img{
     padding:8px;
     border-radius: 20px
 }
-
+.btn-Add{
+    background-color: #ffff;
+    border-color: #050A30;
+    color: #050A30;
+}
 /* Start Breadcrum rules */
 
 .info{
