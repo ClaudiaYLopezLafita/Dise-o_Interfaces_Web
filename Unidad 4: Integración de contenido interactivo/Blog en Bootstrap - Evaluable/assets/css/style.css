@@ -1,7 +1,7 @@
 /*
 Project: UD04-T01-EVALUABLE-Blog en Bootstrap
 Version: 1.0
-Last change: 10.01.2023
+Last change: 22.01.2023
 Assigned to: Claudia Y Lopez Lafita
 
 --------------------[TABLA DE CONTENIDOS]----------------------
@@ -43,7 +43,7 @@ body{
     background-color: #ffff;
 }
 .navbar-logo{
-    width: 35%;
+    width: 26%;
 }
 
 nav img{
@@ -64,6 +64,15 @@ nav img{
     border-color: #050A30;
     color: #050A30;
 }
+
+.collapse-search{
+    display: inline-flex;
+}
+
+.collapse-search i {
+    font-size: 1.25rem;
+}
+
 /* Start Breadcrum rules */
 
 .info{
@@ -96,16 +105,16 @@ nav img{
 }
 
 .card{
-    width: 15rem;
+    width: 17rem;
     border-radius: 20px;
     margin-bottom: 1%;
 }
 
-.card:not(.not-margin){
+/* .card:not(.not-margin){
     margin-left: 3%;
-}
+} */
 
-.card h5, h3{
+.card h5, h3, h2{
     font-family: 'Racing Sans One', cursive;
 }
 
@@ -150,6 +159,17 @@ nav img{
 .card .btn:focus{ 
     background-color: #C41010;
     color: #ffffff;
+}
+
+h2{
+    text-align: center;
+}
+
+.sep_form{
+    background-color: #FF1616;
+    border-top: 3px solid #FF1616; 
+    width: 90%;
+    height: 10%;
 }
 
 /*Start aside rules*/
@@ -270,14 +290,14 @@ h3{
     background-color: #050A30;
 }
 
-.input-group-text{
+.modal-body .input-group-text{
     background-color: #050A30;
     color: #ffff;
     border: none;
     border-bottom: solid 2px #ffff;
 }
 
-input[type='text'],input[type='password']{
+.modal-body input[type='text'], .modal-body input[type='password']{
     background: none;
     border: none;
     border-bottom: solid 2px #ffff;

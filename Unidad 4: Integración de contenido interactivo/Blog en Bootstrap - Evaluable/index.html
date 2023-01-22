@@ -76,11 +76,11 @@
                 <a class="navbar-brand navbar-logo" href="index.html">
                     <img src="./assets/images/logoHeader.svg" alt="Avatar Logo"> 
                 </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button>
+                </button> -->
                 <div class="row collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col-md-6">
+                    <div class="col-md-5 px-0">
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
@@ -98,16 +98,18 @@
                         
                     </div>
                     <div class="col-md row">
-                        <div class="btns-nav">
+                        <div class="btns-nav px-0">
                             <button type="submit" class="btn-Add btn-outline-info rounded-pill py-1"><a type="button" class="nav-link text-dark" aria-current="page" href="#"><i class="bi bi-pencil-square"></i>New</a> </button>
                             <button type="submit" class="btn-login-nav btn rounded-pill py-1"><a type="button" class="nav-link text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login<i class="bi bi-box-arrow-in-right"></i></a> </button>
                             <button type="submit" class="btn-register-nav btn rounded-pill py-1"><a type="button" class="nav-link text-white" aria-current="page" href="registro.html">Registro</a> </button>
                         </div>
-                        <!-- <div class="collapse collapse-horizontal" id="collapseWidthExample">
-                            <input class="form-control" type="search" placeholder="Buscar" aria-label="Buscar">
-                            <button type="button" class="btn-close" aria-label="Cerrar" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></button>
+                    </div>
+                    <div class="col-md collapse-search">
+                        <i class="bi bi-search mt-1" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></i>
+                        <div class="collapse collapse-horizontal" id="collapseWidthExample" >
+                            <input class="form-control-sm rounded-pill" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button type="button" class="btn-close m-0 mt-1" aria-label="Cerrar" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></button>
                         </div>
-                        <i class="bi bi-search" data-bs-toggle="collapse" data-bs-target="#collapseWidthExample" aria-expanded="false" aria-controls="collapseWidthExample"></i> -->
                     </div>
                 </div>
             </div>
@@ -121,10 +123,10 @@
         <!-- END NAVBAR -->
         <!-- START MAIN -->
         <div class=" main container-fluid ">
-            <div class="row justify-content-center gx-4">
+            <div class="row justify-content-center gx-3">
                 <!-- START PRINCIPAL-->
                 <div class="col-lg-8 py-3 px-3">
-                    <div class="fondo row justify-content-center py-3">
+                    <div class="fondo row justify-content-around py-3">
                         <div class="card not-margin">
                             <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Tips</p>
                             <img src="./assets/images/imgCard1.jpeg" class="card-img-top mt-0" alt=".">
@@ -193,7 +195,7 @@
                             <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Salud</p>
                             <img src="./assets/images/imgCard5.jpeg" class="card-img-top mt-0" alt=".">
                             <div class="card-body justify-content-center text-truncate-container px-2">
-                                <h5 class="card-title">El Mecanismo Windlass</h5>
+                                <h5 class="card-title">¿Conoces el Mecanismo Windlass?</h5>
                                 <p class="card-subtitle my-2 text-muted"><i class="bi bi-tags-fill"></i> Salud, Anatomia</p>
                                 <p class="card-text">Toda la planta del pie esta cubierta de unas gruesas bandas de tejido conectivo denominada fascia plantar que discurren desde el calcáneo hacia los dedos y con una función, muy clara: soportar el arco longitudinal medial del pie.</p>
                                 <div class=" icons-card row">
