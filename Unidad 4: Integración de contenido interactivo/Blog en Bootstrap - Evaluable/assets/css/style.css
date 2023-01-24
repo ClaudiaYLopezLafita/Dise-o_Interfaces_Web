@@ -75,7 +75,7 @@ h3{
 
 .form-group{position: relative;}
 
-.form-social{background-color: #050A30;}
+.form-social, .modal-body .bi-social{background-color: #050A30;}
 
 .modal-body input[type='text'],
 .modal-body input[type='password'],
