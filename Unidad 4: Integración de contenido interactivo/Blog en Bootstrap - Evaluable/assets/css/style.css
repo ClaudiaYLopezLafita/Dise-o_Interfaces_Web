@@ -379,6 +379,17 @@ footer a{
 
 /*9. RESPONSIVE RULES*/
 
+@media screen and (max-width: 1199px){
+    .modal-body .col-md-7{
+        display: none;
+    }
+    .modal-body .col-md-8{
+        width: 85%;
+        margin-left: 7%;
+        padding-bottom: 2%;
+    }
+}
+
 @media screen and (max-width: 991px){
     .col-s-2 {
         width: 95% !important;
@@ -396,14 +407,16 @@ footer a{
     }
 }
 
-@media screen and (max-width: 1199px){
-    .modal-body .col-md-7{
-        display: none;
+@media screen and (max-width:414px) {
+    .social-net{
+        width: 100%;
     }
-    .modal-body .col-md-8{
-        width: 85%;
-        margin-left: 7%;
-        padding-bottom: 2%;
+    .news-entry{
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .banner{
+        width: 100%;
     }
 }
-
