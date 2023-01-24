@@ -37,6 +37,106 @@ Ford Alberta Blue: #050A30
 body{
     font-family: 'Montserrat', sans-serif;
 }
+
+/*2. VIDEO RULES*/
+
+/*Start video rules*/
+
+#myVideo {
+    background-color: black;
+    position:fixed;
+    z-index: 3;
+    right: 0;
+    top: 0;
+    /* width: 100%;
+    height: 110%; */
+    /* width: 1400px;
+    height: 700px; */
+}
+
+.videoNone {
+    display: none;
+}
+
+.content {
+    position:fixed;
+    z-index: 4;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+    
+#myBtn, #myBtn2 {
+    width: 20%;
+    padding: 10px; 
+    border: none;
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+}
+
+#myBtn:hover, #myBtn2:hover {
+    background: #ddd;
+    color: black;
+} 
+
+#textAnimation {
+    color: #C41010;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0.4rem;
+}
+
+.animation{
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1;
+    transform: translateY(6rem);
+    animation: up 500ms linear forwards;
+    z-index: 1;
+    text-shadow: 0px 1px 1px rgba(255,255,255,1);
+}
+
+p.animation{
+    font-size: 2rem !important;;
+}
+
+.animation::before, .animation::after{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 1px;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.animation::before{
+    top: 1.4rem;
+    animation: draw 5s linear 5s forwards;
+}
+
+.animation::after{
+    bottom: 0.4rem;
+    animation: draw 5s linear 5s forwards;
+}
+
+@keyframes up {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes draw {
+    100% {
+        width: 100%;
+    }      
+} 
+
 /*Start Navbar rules*/
 
 .navbar{
@@ -144,7 +244,6 @@ nav img{
     margin-left: 20%;
 }
 
-
 .text-truncate-container {
     width: 95%;
 }
@@ -165,11 +264,8 @@ h2{
     text-align: center;
 }
 
-.sep_form{
-    background-color: #FF1616;
-    border-top: 3px solid #FF1616; 
-    width: 90%;
-    height: 10%;
+.icon-codePoint{
+    font-family:'Bootstrap-icons';
 }
 
 /*Start aside rules*/
@@ -301,7 +397,7 @@ h3{
 }
 
 .btn-close{
-    margin-left: 100%;
+    margin-left: 90%;
     margin-top: 3%;
 }
 
@@ -321,3 +417,14 @@ footer a{
     text-decoration: none;
     color: black;
 }
+
+/*RESPONSIVE RULES*/
+
+@media screen and (min-width: 576px) and (max-width: 967px) and (orientation : portrait) {
+    .col-sm-3 {
+        flex: 0 0 auto;
+        width: 95%;
+        /* width: 25%; */
+    }
+}
+

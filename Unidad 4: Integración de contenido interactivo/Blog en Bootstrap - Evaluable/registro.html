@@ -76,11 +76,11 @@
                 <a class="navbar-brand navbar-logo" href="index.html">
                     <img src="./assets/images/logoHeader.svg" alt="Avatar Logo"> 
                 </a>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
-                </button> -->
+                </button>
                 <div class="row collapse navbar-collapse" id="navbarSupportedContent">
-                    <div class="col-md-5 px-0">
+                    <div class="col-md-5 px-0"> <!--col-md-5 -->
                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
                                 <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
@@ -94,8 +94,16 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" aria-current="page" href="#">Sobre Nosotros</a>
                             </li>
+                            <!-- <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#"><i class="bi bi-pencil-square"></i>New</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#"data-bs-toggle="modal" data-bs-target="#loginModal">Login<i class="bi bi-box-arrow-in-right"></i></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="registro.html">Registro</a>
+                            </li> -->
                         </ul>
-                        
                     </div>
                     <div class="col-md row">
                         <div class="btns-nav px-0">
@@ -133,42 +141,70 @@
                             <div class="row g-2">
                                 <div class="col-md">
                                     <div class="form-group">
-                                        <label class="form-label mb-0" for="InputName">Nombre*:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm" id="InputName">
+                                        <label for="insta-url" class="form-label">Nombre*:</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text rounded-pill bg-light shadow-sm" id="url-default"><i class="bi bi-person-circle"></i></span>
+                                            <input type="text" class="form-control shadow-sm rounded-pill" id="insta-url" aria-describedby="url-defaulturl-default">
+                                        </div>
                                     </div>
+                                    <!-- <div class="form-group">
+                                        <label class="form-label mb-0" for="InputName">Nombre*:</label>
+                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputName" placeholder="&#xF4D7;">
+                                    </div> -->
                                 </div>
                                 <div class="col-md">
                                     <div class="form-group">
-                                        <label class="form-label mb-0" for="InputSurname">Apellidos*:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm" id="InputSurname">
+                                        <label for="insta-url" class="form-label">Apellidos*:</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text rounded-pill bg-light shadow-sm" id="url-default"><i class="bi bi-person-vcard-fill"></i></i></span>
+                                            <input type="text" class="form-control shadow-sm rounded-pill" id="insta-url" aria-describedby="url-defaulturl-default">
+                                        </div>
                                     </div>
+                                    <!-- <div class="form-group">
+                                        <label class="form-label mb-0" for="InputSurname">Apellidos*:</label>
+                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputSurname">
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="row g-2 my-sm-1">
                                 <div class="col-md">
                                     <div class="form-group">
-                                        <label class="form-label mb-0" for="InputEmail">Email*:</label>
-                                        <input type="email" class="form-control rounded-pill shadow-sm" id="InputEmail">
+                                        <label for="insta-url" class="form-label">Email*:</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text rounded-pill bg-light shadow-sm" id="url-default"><i class="bi bi-envelope-at-fill"></i></span>
+                                            <input type="text" class="form-control shadow-sm rounded-pill" id="insta-url" aria-describedby="url-defaulturl-default">
+                                        </div>
                                     </div>
+                                    <!-- <div class="form-group">
+                                        <label class="form-label mb-0" for="InputEmail">Email*:</label>
+                                        <input type="email" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputEmail" placeholder="&#xF84B;">
+                                    </div> -->
                                 </div>
                                 <div class="col-md">
                                     <div class="form-group">
-                                        <label class="form-label mb-0" for="InputLocation">Dirección:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm" id="InputLocation">
+                                        <label for="insta-url" class="form-label">Dirección:</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text rounded-pill bg-light shadow-sm" id="url-default"><i class="bi bi-geo-alt-fill"></i></i></span>
+                                            <input type="text" class="form-control shadow-sm rounded-pill" id="insta-url" aria-describedby="url-defaulturl-default">
+                                        </div>
                                     </div>
+                                    <!-- <div class="form-group">
+                                        <label class="form-label mb-0" for="InputLocation">Dirección:</label>
+                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputLocation" placeholder="&#xF3E7;">
+                                    </div> -->
                                 </div>
                             </div>
                             <div class="row g-2 my-1">
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="InputCp">Código Postal:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm" id="InputCp" data-toggle="tooltip" data-placement="left" title="41010" data-html="true">
+                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputCp" data-toggle="tooltip" data-placement="left" title="41010" data-html="true">
                                     </div>
                                 </div>
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="InputCCAA">Comunidad Autónoma:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm" id="InputCCAA">
+                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputCCAA">
                                     </div>
                                 </div>
                             </div>
@@ -176,21 +212,28 @@
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="InputProv">Procincia:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm" id="InputProv" data-toggle="tooltip" data-placement="left" title="41010" data-html="true">
+                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputProv" data-toggle="tooltip" data-placement="left" title="41010" data-html="true">
                                     </div>
                                 </div>
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="InputCity">Ciudad:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm" id="InputCity">
+                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputCity">
                                     </div>
                                 </div>
                             </div>
                             <div class="row g-2 my-1">
                                 <div class="col-md">
+                                    <!-- <div class="form-group">
+                                        <label for="insta-url" class="form-label">Biografía:</label>
+                                        <div class="input-group mb-3">
+                                            <span class="input-group-text rounded-5 shadow-sm" id="url-default"><i class="bi bi-type"></i></span>
+                                            <textarea name="" id="textAreaDescription" class="form-control rounded-5 shadow-sm icon-codePoint" aria-label="With textarea" cols="30" rows="5"></textarea>
+                                        </div>
+                                    </div> -->
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="textAreaDescription">Biografía:</label>
-                                        <textarea name="" id="textAreaDescription" class="form-control rounded-5 shadow-sm" cols="30" rows="10"></textarea>
+                                        <textarea name="" id="textAreaDescription" class="form-control rounded-5 shadow-sm icon-codePoint" cols="30" rows="10" placeholder="&#xF5F7;"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +242,7 @@
                                     <div class="form-group">
                                         <label for="insta-url" class="form-label">Tu Instagram:</label>
                                         <div class="input-group mb-3">
-                                            <span class="input-group-text rounded-5 shadow-sm" id="url-default">https://instagram.com/</span>
+                                            <span class="input-group-text bg-light rounded-5 shadow-sm" id="url-default">https://instagram.com/</span>
                                             <input type="text" class="form-control rounded-5 shadow-sm" id="insta-url" aria-describedby="url-defaulturl-default">
                                         </div>
                                     </div>
@@ -341,10 +384,10 @@
     </div>
     <!-- END BODY INDEX -->
 
-    <script>
+    <!-- <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();   
         });
-    </script>
+    </script> -->
 </body>
 </html>
