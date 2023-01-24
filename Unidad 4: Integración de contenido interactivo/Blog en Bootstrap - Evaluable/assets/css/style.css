@@ -290,15 +290,11 @@ h3{
     background-color: #050A30;
 }
 
+.modal-body input[type='text'],
+.modal-body input[type='password'],
 .modal-body .input-group-text{
-    background-color: #050A30;
-    color: #ffff;
-    border: none;
-    border-bottom: solid 2px #ffff;
-}
-
-.modal-body input[type='text'], .modal-body input[type='password']{
     background: none;
+    color: #ffff;
     border: none;
     border-bottom: solid 2px #ffff;
     letter-spacing: 1px;
