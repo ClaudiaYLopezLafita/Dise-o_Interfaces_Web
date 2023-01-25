@@ -123,15 +123,6 @@ h3{
     width: 100%;
     padding: 20px;
 }
-    
-#myBtn, #myBtn2 {
-    width: 20%;
-    padding: 10px; 
-    border: none;
-    background: #000;
-    color: #fff;
-    cursor: pointer;
-}
 
 #myBtn:hover, #myBtn2:hover {
     background: #ddd;
@@ -375,6 +366,10 @@ footer{border-top:solid 3px #FF1616;}
 footer a{
     text-decoration: none;
     color: black;
+}
+
+iframe{
+    height: 65%;
 }
 
 /*9. RESPONSIVE RULES*/
