@@ -136,7 +136,6 @@
                 <div class="col-lg-8 py-3 px-3">
                     <div class="fondo registro row py-3 px-3">
                         <h2 class="align-content-center mb-0 title-registro">REGISTRO</h2>
-                        <!-- <hr class="sep_form mx-5 px-5"> -->
                         <div class="divider align-items-center my-0">
                             <p class="text-center text-danger fw-bold mx-3 mb-0">-------------------</p>
                         </div>
@@ -150,10 +149,6 @@
                                             <input type="text" class="form-control shadow-sm rounded-pill" id="insta-url" aria-describedby="url-defaulturl-default">
                                         </div>
                                     </div>
-                                    <!-- <div class="form-group">
-                                        <label class="form-label mb-0" for="InputName">Nombre*:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputName" placeholder="&#xF4D7;">
-                                    </div> -->
                                 </div>
                                 <div class="col-md">
                                     <div class="form-group">
@@ -163,10 +158,6 @@
                                             <input type="text" class="form-control shadow-sm rounded-pill" id="insta-url" aria-describedby="url-defaulturl-default">
                                         </div>
                                     </div>
-                                    <!-- <div class="form-group">
-                                        <label class="form-label mb-0" for="InputSurname">Apellidos*:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputSurname">
-                                    </div> -->
                                 </div>
                             </div>
                             <div class="row g-2 my-sm-1">
@@ -178,10 +169,6 @@
                                             <input type="text" class="form-control shadow-sm rounded-pill" id="insta-url" aria-describedby="url-defaulturl-default">
                                         </div>
                                     </div>
-                                    <!-- <div class="form-group">
-                                        <label class="form-label mb-0" for="InputEmail">Email*:</label>
-                                        <input type="email" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputEmail" placeholder="&#xF84B;">
-                                    </div> -->
                                 </div>
                                 <div class="col-md">
                                     <div class="form-group">
@@ -191,23 +178,41 @@
                                             <input type="text" class="form-control shadow-sm rounded-pill" id="insta-url" aria-describedby="url-defaulturl-default">
                                         </div>
                                     </div>
-                                    <!-- <div class="form-group">
-                                        <label class="form-label mb-0" for="InputLocation">Dirección:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputLocation" placeholder="&#xF3E7;">
-                                    </div> -->
                                 </div>
                             </div>
                             <div class="row g-2 my-1">
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="InputCp">Código Postal:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputCp" data-toggle="tooltip" data-placement="left" title="41010" data-html="true">
+                                        <input type="text" class="form-control rounded-pill shadow-sm" id="InputCp" data-toggle="tooltip" data-placement="left" title="41010" data-html="true">
                                     </div>
                                 </div>
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="InputCCAA">Comunidad Autónoma:</label>
-                                        <input type="text" class="form-control rounded-pill shadow-sm icon-codePoint" id="InputCCAA">
+                                        <select class="form-select rounded-pill shadow-sm" aria-label="Default select example">
+                                            <option value="0"></option>
+                                            <option value="AN">Andalucía</option>
+                                            <option value="AR">Aragón</option>
+                                            <option value="AS">Principiado Asturias</option>
+                                            <option value="IB">Islas Baleares</option>
+                                            <option value="CN">Canarias</option>
+                                            <option value="CB">Cantabria</option>
+                                            <option value="CM">Castilla-La Mancha</option>
+                                            <option value="CL">Castilla y León</option>
+                                            <option value="CT">Cataluña</option>
+                                            <option value="VC">Comunidad Valencia</option>
+                                            <option value="EX">Extremadura</option>
+                                            <option value="GA">Galicia</option>
+                                            <option value="RI">La Rioja</option>
+                                            <option value="MD">Comunidad de Madrid</option>
+                                            <option value="NC">Comunidad Foral de Navarra</option>
+                                            <option value="">País Vasco</option>
+                                            <option value="PV">País Vasco</option>
+                                            <option value="MC">Región de Murcia</option>
+                                            <option value="CE">Ciudad Autónoma de Ceuta</option>
+                                            <option value="ML">Ciudad Autónoma de Melilla</option>
+                                        </select>
                                     </div>
                                 </div>
                             </div>
@@ -227,13 +232,6 @@
                             </div>
                             <div class="row g-2 my-1">
                                 <div class="col-md">
-                                    <!-- <div class="form-group">
-                                        <label for="insta-url" class="form-label">Biografía:</label>
-                                        <div class="input-group mb-3">
-                                            <span class="input-group-text rounded-5 shadow-sm" id="url-default"><i class="bi bi-type"></i></span>
-                                            <textarea name="" id="textAreaDescription" class="form-control rounded-5 shadow-sm icon-codePoint" aria-label="With textarea" cols="30" rows="5"></textarea>
-                                        </div>
-                                    </div> -->
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="textAreaDescription">Biografía:</label>
                                         <textarea name="" id="textAreaDescription" class="form-control rounded-5 shadow-sm icon-codePoint" cols="30" rows="10" placeholder="&#xF5F7;"></textarea>
