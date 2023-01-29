@@ -472,7 +472,7 @@ iframe{
     }
     
     video {
-        transform: translateY(49%) translateX(2.9%);
+        transform: translateY(49%) translateX(1.9%);
         width: 100%; 
         max-width:100%; 
         max-height: 50%;
