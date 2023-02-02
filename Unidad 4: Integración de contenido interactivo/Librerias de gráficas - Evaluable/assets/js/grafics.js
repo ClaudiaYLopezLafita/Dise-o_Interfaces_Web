@@ -35,7 +35,7 @@ new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Ganacias mensuales',
+                text: 'Ganancias mensuales',
                 font: {
                     size: 30
                 }
@@ -254,7 +254,7 @@ new Chart(ctx4,{
         plugins: {
             title: {
                 display: true,
-                text: 'Ranking de eventos',
+                text: 'Ranking Anual',
                 font: {
                     size: 30
                 }
