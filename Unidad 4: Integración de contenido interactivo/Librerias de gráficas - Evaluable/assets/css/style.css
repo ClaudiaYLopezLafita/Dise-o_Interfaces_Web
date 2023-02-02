@@ -160,7 +160,7 @@ h3{
     font-family: 'Racing Sans One', cursive;
 }
 
-.btn-login-nav{
+.btn-login-nav, .btn-back{
     background-color: #FF1616;
     color: #ffff;
     font-weight: bold;

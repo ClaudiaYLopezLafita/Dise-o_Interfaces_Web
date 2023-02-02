@@ -3,8 +3,6 @@ const ctx2 = document.getElementById('inscripcionesG');
 const ctx3 = document.getElementById('categoriaG');
 const ctx4 = document.getElementById('rankingG');
 
-//https://parzibyte.me/blog/2021/01/03/chart-js-tutorial-ejemplos-graficas-web/
-
 //1. GRAFICA GANANCIAS MENSUALES
 
 // Las etiquetas son las que van en el eje X. 
@@ -37,11 +35,17 @@ new Chart(ctx, {
         plugins: {
             title: {
                 display: true,
-                text: 'Ganacias mensuales(€) año 2022',
+                text: 'Ganacias mensuales',
+                font: {
+                    size: 30
+                }
             },
             subtitle: {
                 display: true,
-                text: 'Custom Chart Subtitle'
+                text: '(€) año 2022',
+                font: {
+                    size: 15
+                }
             }
         },
         scales: {
@@ -55,7 +59,6 @@ new Chart(ctx, {
 });
 
 // 2. GRAFICAS DE INSCRIPCIONES EVENTOS POR MES CON MEDIA
-//https://code.tutsplus.com/es/tutorials/getting-started-with-chartjs-line-and-bar-charts--cms-28384
 
 // Las etiquetas son las que van en el eje X. 
 const meses = ["Enero", "Febrero", "Marzo", "Abril","Mayo", "Junio", 
@@ -117,11 +120,17 @@ new Chart(ctx2,{
         plugins: {
             title: {
                 display: true,
-                text: 'Inscritos por evento en cada mes 2022',
+                text: 'Inscritos por evento en cada mes',
+                font: {
+                    size: 30
+                }
             },
             subtitle: {
                 display: true,
-                text: 'Media de inscritos (lineal)'
+                text: 'Media de inscritos',
+                font: {
+                    size: 15
+                }
             }
         },
         scales:{
@@ -171,11 +180,17 @@ new Chart(ctx3, {
         plugins: {
             title: {
                 display: true,
-                text: 'Inscripciones por Categoría año 2022',
+                text: 'Inscripciones por Categoría',
+                font: {
+                    size: 30
+                }
             },
             subtitle: {
                 display: true,
-                text: 'Custom Chart Subtitle'
+                text: 'Según tipo de carrera',
+                font: {
+                    size: 15
+                }
             }
         },
         animateRotate:true,
@@ -240,11 +255,22 @@ new Chart(ctx4,{
             title: {
                 display: true,
                 text: 'Ranking de eventos',
+                font: {
+                    size: 30
+                }
             },
             subtitle: {
                 display: true,
-                text: 'Más incritos en 2022'
+                text: 'Más incritos',
+                font: {
+                    size: 15
+                }
             }
         },
+        scale: {
+            pointLabels :{
+                fontStyle: "bold",
+            }
+        }
     }
 })
