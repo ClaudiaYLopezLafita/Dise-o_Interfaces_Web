@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- START MODAL-->
-    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-body p-0">
@@ -42,12 +42,12 @@
                                 </div>
                                 <form>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-person-fill"></i></span>
-                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                        <span class="input-group-text" id="user_icon_login"><i class="bi bi-person-fill"></i></span>
+                                        <input type="text" class="form-control" placeholder="Username" aria-label="Username">
                                     </div>
                                     <div class="input-group mb-3">
-                                        <span class="input-group-text" id="basic-addon1"><i class="bi bi-lock-fill"></i></span>
-                                        <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                        <span class="input-group-text" id="password_icon_login"><i class="bi bi-lock-fill"></i></span>
+                                        <input type="password" class="form-control" placeholder="Password" aria-label="Password">
                                     </div>
                                     <div class="mb-2 form-check">
                                         <input type="checkbox" class="form-check-input" id="exampleCheck1">
@@ -94,22 +94,19 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" aria-current="page" href="#">Sobre Nosotros</a>
                             </li>
-                            <!-- <li class="nav-item">
-                                <a class="nav-link text-dark" aria-current="page" href="#"><i class="bi bi-pencil-square"></i>New</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" aria-current="page" href="#"data-bs-toggle="modal" data-bs-target="#loginModal">Login<i class="bi bi-box-arrow-in-right"></i></a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" aria-current="page" href="registro.html">Registro</a>
-                            </li> -->
                         </ul>
                     </div>
                     <div class="col-md row">
-                        <div class="btns-nav px-0">
-                            <button type="submit" class="btn-Add btn-outline-info rounded-pill py-1"><a type="button" class="nav-link text-dark" aria-current="page" href="#"><i class="bi bi-pencil-square"></i>New</a> </button>
-                            <button type="submit" class="btn-login-nav btn rounded-pill py-1"><a type="button" class="nav-link text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login<i class="bi bi-box-arrow-in-right"></i></a> </button>
-                            <button type="submit" class="btn-register-nav btn rounded-pill py-1"><a type="button" class="nav-link text-white" aria-current="page" href="registro.html">Registro</a> </button>
+                        <div class="btns-nav d-flex justify-content-around px-0">
+                            <div class="btn-Add rounded-pill px-2">
+                                <a class="nav-link py-1 m-0 text-dark" aria-current="page" href="#"><i class="bi bi-pencil-square"></i>New</a>
+                            </div>
+                            <div class="btn-login-nav btn py-sm-1 rounded-pill">
+                                <a class="nav-link py-0 m-0 text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login<i class="bi bi-box-arrow-in-right"></i></a>
+                            </div>
+                            <div class="btn-register-nav rounded-pill">
+                                <a class="nav-link  px-2  py-1 m-0 text-white" aria-current="page" href="registro.html">Resgistro</a> 
+                            </div>
                         </div>
                     </div>
                     <div class="col-md collapse-search">
@@ -129,8 +126,7 @@
                 <li class="breadcrumb-item text-white" aria-current="page">Registro</li>
             </ol>
         </nav>
-        <!-- END NAVBAR -->
-        
+        <!-- END NAVBAR -->    
         <!-- START MAIN -->
         <div class=" main container-fluid ">
             <div class="row justify-content-center gx-4">
@@ -142,14 +138,14 @@
                         <div class="divider align-items-center my-0">
                             <p class="text-center text-danger fw-bold mx-3 mb-0">-------------------</p>
                         </div>
-                        <form action="" id="formR" class="form-register px-4">
+                        <form action="post" id="formR" class="form-register px-4">
                             <div class="row g-2">
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label for="name-input" class="form-label">Nombre*:</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text rounded-pill bg-light shadow-sm" id="icon-default"><i class="bi bi-person-circle"></i></span>
-                                            <input type="text" class="form-control shadow-sm rounded-pill" id="name-input" aria-describedby="url-defaulturl-default">
+                                            <input type="text" class="form-control shadow-sm rounded-pill" id="name-input">
                                         </div>
                                     </div>
                                 </div>
@@ -157,8 +153,8 @@
                                     <div class="form-group">
                                         <label for="surname-input" class="form-label">Apellidos*:</label>
                                         <div class="input-group mb-3">
-                                            <span class="input-group-text rounded-pill bg-light shadow-sm" id="icon2-default"><i class="bi bi-person-vcard-fill"></i></i></span>
-                                            <input type="text" class="form-control shadow-sm rounded-pill" id="surname-input" aria-describedby="url-defaulturl-default">
+                                            <span class="input-group-text rounded-pill bg-light shadow-sm" id="icon2-default"><i class="bi bi-person-vcard-fill"></i></span>
+                                            <input type="text" class="form-control shadow-sm rounded-pill" id="surname-input">
                                         </div>
                                     </div>
                                 </div>
@@ -169,7 +165,7 @@
                                         <label for="mail-input" class="form-label">Email*:</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text rounded-pill bg-light shadow-sm" id="icon-mail"><i class="bi bi-envelope-at-fill"></i></span>
-                                            <input type="text" class="form-control shadow-sm rounded-pill" id="mail-input" aria-describedby="url-defaulturl-default">
+                                            <input type="text" class="form-control shadow-sm rounded-pill" id="mail-input">
                                         </div>
                                     </div>
                                 </div>
@@ -177,8 +173,8 @@
                                     <div class="form-group">
                                         <label for="direction-input" class="form-label">Dirección:</label>
                                         <div class="input-group mb-3">
-                                            <span class="input-group-text rounded-pill bg-light shadow-sm" id="icon-location"><i class="bi bi-geo-alt-fill"></i></i></span>
-                                            <input type="text" class="form-control shadow-sm rounded-pill" id="direction-input" aria-describedby="url-defaulturl-default">
+                                            <span class="input-group-text rounded-pill bg-light shadow-sm" id="icon-location"><i class="bi bi-geo-alt-fill"></i></span>
+                                            <input type="text" class="form-control shadow-sm rounded-pill" id="direction-input">
                                         </div>
                                     </div>
                                 </div>
@@ -193,7 +189,7 @@
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="InputCCAA">Comunidad Autónoma:</label>
-                                        <select class="form-select rounded-pill shadow-sm" aria-label="Default select example">
+                                        <select class="form-select rounded-pill shadow-sm" id="InputCCAA" aria-label="Default select example">
                                             <option value="0"></option>
                                             <option value="AN">Andalucía</option>
                                             <option value="AR">Aragón</option>
@@ -237,7 +233,7 @@
                                 <div class="col-md">
                                     <div class="form-group">
                                         <label class="form-label mb-0" for="textAreaDescription">Biografía:</label>
-                                        <textarea name="" id="textAreaDescription" class="form-control rounded-5 shadow-sm icon-codePoint" cols="30" rows="10" placeholder="&#xF5F7;"></textarea>
+                                        <textarea name="area_biografia" id="textAreaDescription" class="form-control rounded-5 shadow-sm icon-codePoint" cols="30" rows="10"></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -247,7 +243,7 @@
                                         <label for="insta-url" class="form-label">Tu Instagram:</label>
                                         <div class="input-group mb-3">
                                             <span class="input-group-text bg-light rounded-5 shadow-sm" id="url-default">https://instagram.com/</span>
-                                            <input type="text" class="form-control rounded-5 shadow-sm" id="insta-url" aria-describedby="url-defaulturl-default">
+                                            <input type="text" class="form-control rounded-5 shadow-sm" id="insta-url">
                                         </div>
                                     </div>
                                 </div>
@@ -348,7 +344,6 @@
             </div>
         </div>
         <!-- END MAIN -->
-
         <!-- START FOOTER -->
         <footer class="pt-4 pb-2">
             <div class="row">
@@ -361,42 +356,41 @@
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Secciones</h5>
                     <ul class="nav flex-column">
-                        <a href=""><li class="nav-item mb-1">Home</li></a>
-                        <a href=""><li class="nav-item mb-1">Entradas</li></a>
-                        <a href=""><li class="nav-item mb-1">Categoria</li></a>
-                        <a href=""><li class="nav-item mb-1">Sobre Nosotros</li></a>
+                        <li class="nav-item mb-1"><a href="#">HOme</a></li>
+                        <li class="nav-item mb-1"><a href="#">Entradas</a></li>
+                        <li class="nav-item mb-1"><a href="#">Categoria</a></li>
+                        <li class="nav-item mb-1"><a href="#">Sobre Nosotros</a></li>
                     </ul>
                 </div>
                 <!--tags-->
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Etiquetas</h5>
                     <ul class="nav flex-column">
-                        <a href=""><li class="nav-item mb-1">Salud</li></a>
-                        <a href=""><li class="nav-item mb-1">Anatomía</li></a>
-                        <a href=""><li class="nav-item mb-1">Alimentación</li></a>
-                        <a href=""><li class="nav-item mb-1">...</li></a>
+                        <li class="nav-item mb-1"><a href="#">Salud</a></li>
+                        <li class="nav-item mb-1"><a href="#">Anatomia</a></li>
+                        <li class="nav-item mb-1"><a href="#">Alimentación</a></li>
+                        <li class="nav-item mb-1"><a href="#">...</a></li>
                     </ul>
                 </div>
                 <!--categories-->
                 <div class="col-6 col-md-2 mb-3">
                     <h5>Categorias</h5>
                     <ul class="nav flex-column">
-                        <a href=""><li class="nav-item mb-1">Tips</li></a>
-                        <a href=""><li class="nav-item mb-1">Salud</li></a>
-                        <a href=""><li class="nav-item mb-1">Eventos</li></a>
-                        <a href=""><li class="nav-item mb-1">...</li></a>
+                        <li class="nav-item mb-1"><a href="#">Tips</a></li>
+                        <li class="nav-item mb-1"><a href="#">Salud</a></li>
+                        <li class="nav-item mb-1"><a href="#">Eventos</a></li>
+                        <li class="nav-item mb-1"><a href="#">...</a></li>
                     </ul>
                 </div>
             </div>
             <!--licenses-->
             <div class="d-flex flex-column flex-sm-row justify-content-center pt-3 pb-2 my-2 border-top">
-                <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" />. 2023 Alixar, IES.</p>
+                <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/></a>2023 Alixar, IES.</p>
             </div>
         </footer>
         <!-- END FOOTER -->
     </div>
     <!-- END BODY INDEX -->
-
     <script>
         $(document).ready(function(){
             $('[data-toggle="tooltip"]').tooltip();   
