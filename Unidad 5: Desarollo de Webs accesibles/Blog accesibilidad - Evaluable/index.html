@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imperial</title>
+
+    <!-- Bootstrap link-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Icon Bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <!-- CSS link-->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- JS file-->
+    <script defer src="./assets/js/utils.js"></script>
+</head>
+<body>
+    <!-- START MODAL-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-body p-0">
+                    <div class="container-fluid h-custom px-0">
+                        <div class="row justify-content-start align-items-start gx-5">
+                            <!-- colum img -->
+                            <div class="col-md-7 ml-0 pl-0">
+                                <img src="./assets/images/loginImg.jpg" class="loginImg" alt="Sample image">
+                            </div>
+                            <!-- colum form -->
+                            <div class="col-md-8 col-lg-6 col-xl-4 ml-2 col-form">
+                                <button type="button" class="btn-close text-bg-light" data-bs-dismiss="modal" aria-label="Close"></button>
+                                <h3 class="mt-1">Sign in with</h3>
+                                <!--social login-->
+                                <div class="d-flex flex-row align-items-center justify-content-center justify-content-lg-center">
+                                    <button class="btn mb-2"><i class="bi bi-social form-social bi-facebook"></i></button>
+                                    <button class="btn"><i class="bi bi-social form-social bi-twitter"></i></button>
+                                    <button class="btn mb-2"><i class="bi bi-social form-social bi-google"></i></button>                       
+                                </div>
+                                <div class="divider align-items-center my-3">
+                                    <p class="text-center fw-bold mx-3 mb-0">Or</p>
+                                </div>
+                                <!-- login form-->
+                                <form>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="user_icon_login"><i class="bi bi-person-fill"></i></span>
+                                        <input type="text" class="form-control text-white" placeholder="Username" aria-label="Username">
+                                    </div>
+                                    <div class="input-group mb-3">
+                                        <span class="input-group-text" id="password_icon_login"><i class="bi bi-lock-fill"></i></span>
+                                        <input type="password" class="form-control text-white" placeholder="Password" aria-label="Password">
+                                    </div>
+                                    <div class="mb-2 form-check">
+                                        <input type="checkbox" class="form-check-input" id="remenber_check">
+                                        <label class="form-check-label" for="remenber_check"><small>Remember me</small></label>
+                                    </div>
+                                    <a href="#!" class="text-footer">Forgot password?</a>
+                                    <div class="buttons mt-3 d-flex flex-row align-items-center justify-content-center">
+                                        <button type="submit" class="btn-login btn rounded-pill py-1">Login</button>
+                                        <button type="submit" class="btn-cancel btn rounded-pill py-1" data-bs-dismiss="modal" aria-label="Close">Cancel</button>
+                                    </div>
+                                </form>                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- END MODAL-->
+
+    <!--STAR VIDEO-->
+
+        <!-- <div class="video dismissible container-video" id="video" aria-hidden="true">
+            <video id="myVideo" autoplay muted loop>
+                <source src="./assets/images/imperialViedo.mp4" type="video/mp4">
+            </video>
+            <div class="content" id="textContent">
+                <h3 id="textAnimation" class="animation">Runners</h3>
+                <p class="animation">Valencia, Madrid, Sevilla... supérate corriendo con nosotros.</p>
+                <br>
+                <button id="myBtn" type="button" class="btn-close rounded-pill bg-light text-white m-0 px-lg-5 py-2" 
+                data-bs-dismiss="video" aria-label="Close"></button>
+                <button id="myBtn2" class="btn rounded-pill bg-black text-white px-3" >Pause</button>
+            </div> 
+        </div>-->
+
+    <!--END VIDEO-->
+
+    <!-- START BODY INDEX -->
+    <div class="container-fluid p-0">
+        <!-- START NAVBAR -->
+        <nav class="navbar navbar-expand-lg navbar-light ">
+            <div class="container-fluid">
+                <!-- logo page-->
+                <a class="navbar-brand navbar-logo" href="index.html">
+                    <img src="./assets/images/logoHeader.svg" alt="Avatar Logo"> 
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--menu navbar-->
+                <div class="row collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- option menu-->
+                    <div class="col-md-5 px-0">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class=" active nav-link text-dark" aria-current="page" href="#">Entradas</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Categorias</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link text-dark" aria-current="page" href="#">Sobre Nosotros</a>
+                            </li>
+                        </ul>
+                        
+                    </div>
+                    <!-- button option-->
+                    <div class="col-md row">
+                        <div class="btns-nav d-flex justify-content-around px-0">
+                            <div class="btn-Add rounded-pill px-2">
+                                <a class="nav-link py-1 m-0 text-dark" aria-current="page" href="#"><i class="bi bi-pencil-square"></i>New</a>
+                            </div>
+                            <div class="btn-login-nav btn py-sm-1 rounded-pill">
+                                <a class="nav-link py-0 m-0 text-white" aria-current="page" href="#" data-bs-toggle="modal" data-bs-target="#loginModal">Login<i class="bi bi-box-arrow-in-right"></i></a>
+                            </div>
+                            <div class="btn-register-nav rounded-pill">
+                                <a class="nav-link  px-2  py-1 m-0 text-white" aria-current="page" href="registro.html">Resgistro</a> 
+                            </div>
+                        </div>
+                    </div>
+                    <!-- collapse search-->
+                    <div class="col-md collapse-search" aria-current="page">
+                        <i class="bi bi-search mt-1" title="icon_search" data-bs-toggle="collapse" data-bs-target="#collapse_search" aria-expanded="false" aria-controls="collapse_search"></i>
+                        <div class="collapse collapse-horizontal" id="collapse_search" >
+                            <input class="form-control-sm rounded-pill" type="search" placeholder="Buscar" aria-label="Buscar">
+                            <button type="button" class="btn-close m-0 mt-1" aria-label="Cerrar" data-bs-toggle="collapse" data-bs-target="#collapse_search" aria-expanded="false" aria-controls="collapse_search"></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- breascrumb-->
+        <nav class="info" aria-label="breadcrumb">
+            <ol class="breadcrumb pt-6 mb-0">
+                <li class="breadcrumb-item text-white"><a href="#">Inicio</a></li>
+                <li class="breadcrumb-item text-white" aria-current="page">Entradas</li>
+            </ol>
+        </nav>
+        <!-- END NAVBAR -->
+
+        <!-- START MAIN -->
+        <div class="main container-fluid ">
+            <div class="row justify-content-center gx-3">
+                <!-- START PRINCIPAL-->
+                <div class="col-lg-8 py-3 px-3">
+                    <div class="fondo row justify-content-around py-3">
+                        <!-- card 1-->
+                        <div class="card not-margin">
+                            <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Tips</p>
+                            <img src="./assets/images/imgCard1.jpeg" class="card-img-top mt-0" alt=".">
+                            <!--body card-->
+                            <div class="card-body justify-content-center text-truncate-container px-2">
+                                <h5 class="card-title">La forma correcta de correr descalzo </h5>
+                                <p class="card-subtitle my-2 text-muted"><i class="bi bi-tags-fill"></i> Minimalismo, Barefoot</p>
+                                <p class="card-text">A menudo recibo comentarios y preguntas en el blog y las redes sociales acerca de cuál es la forma correcta de correr descalzo.</p>
+                                <!-- icon card-->
+                                <div class=" icons-card row">
+                                    <small class="col"><i class="col bi bi-eye-fill">20k</i> </small>
+                                    <small class="col"><i class="col bi bi-chat-fill">50</i> </small>
+                                    <small class="col"><i class="col bi bi-heart-fill">5k</i></small>
+                                </div>
+                                <hr class="mt-0">
+                                <button class="btn rounded-pill py-1">+Información</button>
+                            </div>
+                        </div>
+                        <!-- card 2-->
+                        <div class="card">
+                            <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Tips</p>
+                            <img src="./assets/images/imgCard2.jpeg" class="card-img-top mt-0" alt=".">
+                            <!-- body card-->
+                            <div class="card-body justify-content-center text-truncate-container px-2">
+                                <h5 class="card-title">40 Frases para motivarse a correr</h5>
+                                <p class="card-subtitle my-2 text-muted"><i class="bi bi-tags-fill"></i> Motivación, Running</p>
+                                <p class="card-text">Espero que estas frases te aporten un plus de motivación y de energía cuando las fuerzas empiezan a flaquear, y te ayuden a superar tus miedos y limitaciones. Os propongo también algunos vídeos para motivarse a correr.</p>
+                                <!-- icon card-->
+                                <div class=" icons-card row">
+                                    <small class="col"><i class="col bi bi-eye-fill">10k</i> </small>
+                                    <small class="col"><i class="col bi bi-chat-fill">5</i> </small>
+                                    <small class="col"><i class="col bi bi-heart-fill">2k</i></small>
+                                </div>
+                                <hr class="mt-0">
+                                <button class="btn rounded-pill py-1">+Información</button>
+                            </div>
+                        </div>
+                        <!-- card 3-->
+                        <div class="card">
+                            <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Eventos</p>
+                            <img src="./assets/images/imgCard3.jpeg" class="card-img-top mt-0" alt=".">
+                            <div class="card-body justify-content-center text-truncate-container px-2">
+                                <h5 class="card-title">Calendario de maratones 2023 </h5>
+                                <p class="card-subtitle my-2 text-muted"><i class="bi bi-tags-fill"></i> Calendario</p>
+                                <p class="card-text">Como todos los años dejo la lista provisional de las maratones más famosos de nuestro país; algunos con fecha pendiente de confirmación por parte de los organizadores.</p>
+                                <!--body card-->
+                                <div class=" icons-card row">
+                                    <small class="col"><i class="col bi bi-eye-fill">50k</i> </small>
+                                    <small class="col"><i class="col bi bi-chat-fill">205</i> </small>
+                                    <small class="col"><i class="col bi bi-heart-fill">20k</i></small>
+                                </div>
+                                <hr class="mt-0">
+                                <button class="btn rounded-pill py-1">+Información</button>
+                            </div>
+                        </div>
+                        <!-- card 4-->
+                        <div class="card not-margin">
+                            <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Salud</p>
+                            <img src="./assets/images/imgCard4.jpg" class="card-img-top mt-0" alt=".">
+                            <!-- body card-->
+                            <div class="card-body justify-content-center text-truncate-container px-2">
+                                <h5 class="card-title">Garbanzos: energía y proteínas</h5>
+                                <p class="card-subtitle my-2 text-muted"><i class="bi bi-tags-fill"></i> Alimentación, Alcalina</p>
+                                <p class="card-text">Los garbanzos son una legumbre muy popular, con un alto aporte energético y una de las mejores fuentes de proteína vegetal.  Por este motivo, los garbanzos son un alimento muy interesante para los deportistas..</p>
+                                <!-- icon card-->
+                                <div class=" icons-card row">
+                                    <small class="col"><i class="col bi bi-eye-fill">5k</i> </small>
+                                    <small class="col"><i class="col bi bi-chat-fill">100</i> </small>
+                                    <small class="col"><i class="col bi bi-heart-fill">1k</i></small>
+                                </div>
+                                <hr class="mt-0">
+                                <button class="btn rounded-pill py-1">+Información</button>
+                            </div>
+                        </div>
+                        <!-- card 5-->
+                        <div class="card">
+                            <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Salud</p>
+                            <img src="./assets/images/imgCard5.jpeg" class="card-img-top mt-0" alt=".">
+                            <!--body card-->
+                            <div class="card-body justify-content-center text-truncate-container px-2">
+                                <h5 class="card-title">¿Conoces el Mecanismo Windlass?</h5>
+                                <p class="card-subtitle my-2 text-muted"><i class="bi bi-tags-fill"></i> Salud, Anatomia</p>
+                                <p class="card-text">Toda la planta del pie esta cubierta de unas gruesas bandas de tejido conectivo denominada fascia plantar que discurren desde el calcáneo hacia los dedos y con una función, muy clara: soportar el arco longitudinal medial del pie.</p>
+                                <!--icon card-->
+                                <div class=" icons-card row">
+                                    <small class="col"><i class="col bi bi-eye-fill">50k</i> </small>
+                                    <small class="col"><i class="col bi bi-chat-fill">205</i> </small>
+                                    <small class="col"><i class="col bi bi-heart-fill">20k</i></small>
+                                </div>
+                                <hr class="mt-0">
+                                <button class="btn rounded-pill py-1">+Información</button>
+                            </div>
+                        </div>
+                        <!-- card 6-->
+                        <div class="card">
+                            <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Salud</p>
+                            <img src="./assets/images/imgCard6.jpg" class="card-img-top mt-0" alt=".">
+                            <!-- body card-->
+                            <div class="card-body justify-content-center text-truncate-container px-2">
+                                <h5 class="card-title">Un peligro oculto para el Runner</h5>
+                                <p class="card-subtitle my-2 text-muted"><i class="bi bi-tags-fill"></i> Alimnetacion, Salud</p>
+                                <p class="card-text">Los runner y en especial los que se dedican tanto al trail como al fondo y ultrafondo, deben tener en cuenta una alteración que se produce en nuestro cuerpo cuando lo sometemos a ejercicios muy exigentes, me estoy refiriendo a la Acidosis en el Runner.</p>
+                                <!-- icon card-->
+                                <div class=" icons-card row">
+                                    <small class="col"><i class="col bi bi-eye-fill">30k</i> </small>
+                                    <small class="col"><i class="col bi bi-chat-fill">1</i> </small>
+                                    <small class="col"><i class="col bi bi-heart-fill">2k</i></small>
+                                </div>
+                                <hr class="mt-0">
+                                <button class="btn rounded-pill py-1">+Información</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END PRINCIPAL -->
+                <!-- START SIDEBAR  -->
+                <div class="col-s-2 py-3 justify-content-center">
+                    <div class="fondo container-fluid p-0">
+                        <aside class="sidebar row justify-content-center mx-3">
+                            <!--social net-->
+                            <div class="social-net row bg-light m-3 pb-3">
+                                <p class="mb-0 mt-2">Redes Sociales</p>
+                                <hr class="mt-0">
+                                <div class="col-sm-3">
+                                    <button class="btn mb-2"><i class="bi bi-social bi-facebook"></i></button>
+                                    <button class="btn"><i class="bi bi-social bi-twitter"></i></button>
+                                </div>
+                                <div class="col-sm-3">
+                                    <button class="btn mb-2"><i class="bi bi-social bi-google"></i></button>
+                                    <button class="btn"><i class="bi  bi-social bi-pinterest"></i></button>
+                                </div>
+                                <div class="col-sm-3">
+                                    <button class="btn mb-2"><i class="bi bi-social bi-instagram"></i></button>
+                                    <button class="btn mb-2"><i class="bi bi-social bi-mastodon"></i></button>
+
+                                </div>
+                            </div>
+                            <!--carousel-->
+                            <div class="news-entry bg-light p-2">
+                                <p class="mb-0 mt-2">Entradas Destacadas</p>
+                                <hr class="mt-0">
+                                <div class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <a href=""><img src="./assets/images/imgCarousel1.jpeg" class="img-carousel d-block w-100" alt=".."></a>
+                                            <div class="carousel-caption d-none d-sm-block py-0 my-0">
+                                                <p class="mt-1">¿Qué ocurre cuando corremos?</p>
+                                                <small class="d-inline-block text-truncate" >A todos nos intriga saber qué ocurre en nuestro cuerpo cuando corremos. ¿Qué transformaciones se producen en el mismo, por el simple hecho de correr dos horas al día?</small>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/images/imgCarousel2.jpeg" class="img-carousel d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-sm-block py-0 my-0">
+                                                <p class="mt-1">Tips para mejorar el tiempo</p>
+                                                <small class="d-inline-block text-truncate">Antes de empezar a leer esta entrada, detente un momento y piensa… Para ti, ¿cómo es el runner perfecto?</small>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="./assets/images/imgCarousel3.jpeg" class="img-carousel d-block w-100" alt="...">
+                                            <div class="carousel-caption d-none d-md-block py-0 my-0">
+                                            <p class="mt-1">120 maratones en huaraches</p>
+                                            <small class="d-inline-block text-truncate">Miles de kilómetros y muchos cientos de horas corriendo durante todo un año, no tengo la menor duda de que me han servido para pensar y madurar mucho como runner minimalista.</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Anterior</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Siguiente</span>
+                                    </button>
+                                </div>
+                            </div>
+                            <!-- banner-->
+                            <div class="banner m-3">
+                                <img src="./assets/images/banner.png" alt="banner-descuento">
+                            </div>
+                        </aside>
+                    </div>
+                </div>
+                <!-- END SIDEBAR -->
+            </div>
+        </div>
+        <!-- END MAIN -->
+        <!-- START FOOTER -->
+        <footer class="pt-4 pb-2">
+            <div class="row">
+                <!-- localitacion-->
+                <div class="col-md-5 offset-sm-1 mb-3 pl-0">
+                    <h5>Localizanos</h5>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12681.179418684065!2d-6.0584269!3d37.3828587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca80e208bb71b4d!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Alixar!5e0!3m2!1ses!2ses!4v1673958290706!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <!--sections-->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Secciones</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1"><a href="#">HOme</a></li>
+                        <li class="nav-item mb-1"><a href="#">Entradas</a></li>
+                        <li class="nav-item mb-1"><a href="#">Categoria</a></li>
+                        <li class="nav-item mb-1"><a href="#">Sobre Nosotros</a></li>
+                    </ul>
+                </div>
+                <!--tags-->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Etiquetas</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1"><a href="#">Salud</a></li>
+                        <li class="nav-item mb-1"><a href="#">Anatomia</a></li>
+                        <li class="nav-item mb-1"><a href="#">Alimentación</a></li>
+                        <li class="nav-item mb-1"><a href="#">...</a></li>
+                    </ul>
+                </div>
+                <!--categories-->
+                <div class="col-6 col-md-2 mb-3">
+                    <h5>Categorias</h5>
+                    <ul class="nav flex-column">
+                        <li class="nav-item mb-1"><a href="#">Tips</a></li>
+                        <li class="nav-item mb-1"><a href="#">Salud</a></li>
+                        <li class="nav-item mb-1"><a href="#">Eventos</a></li>
+                        <li class="nav-item mb-1"><a href="#">...</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--licenses-->
+            <div class="d-flex flex-column flex-sm-row justify-content-center pt-3 pb-2 my-2 border-top">
+                <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/></a> 2023 Alixar, IES.</p>
+            </div>
+        </footer>
+        <!-- END FOOTER -->
+    </div>
+    <!-- END BODY INDEX -->
+</body>
+</html>

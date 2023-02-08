@@ -1,0 +1,489 @@
+/*
+Project: UD04-T01-EVALUABLE-Blog en Bootstrap
+Version: 1.0
+Last change: 29.01.2023
+Assigned to: Claudia Y Lopez Lafita
+
+--------------------[TABLA DE CONTENIDOS]----------------------
+
+1. GENERAL
+2. MODAL RULES
+3. VIDEO RULES
+4. NAVBAR RULES
+5. MAIN RULES
+6. PRINCIPAL RULES
+7. SIDEBAR RULES
+8. FOOTER RULES
+9. RESPONSIVE RULES
+
+----------------------[CÓDIGOS DE COLOR]------------------------
+
+White: #fff
+Beckers Lovikagrå 505: #D9D9D9
+Scarlet: #FF1616
+Cinnabar: #dd4b39
+Shade of Red: #C41010
+Fire Engine Red: #cb2027
+Medium light shade of cyan-blue: #55ACEE
+Chinese Blue: #3B5998
+Shade of Magenta: #ac2bac
+BLue Charcoal: #1C2833
+Ford Alberta Blue: #050A30
+Black: #000
+
+----------------------[FUENTES Y TIPOGRAFIAS]-------------------
+
+'Racing Sans One', cursive
+'Montserrat', sans-serif
+----------------------------------------------------------------
+*/
+
+/*1. GENERAL*/
+
+@import url('https://fonts.googleapis.com/css2?family=Racing+Sans+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Racing+Sans+One&display=swap');
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+}
+
+/*2. MODAL RULES */
+
+/* Start modal rules*/
+.modal-content{
+    -webkit-border-radius: 0px !important;
+    -moz-border-radius: 0px !important;
+    border-radius: 20px !important; 
+}
+.modal-body{
+    padding-left: 0;
+    background-color: #050A30;
+    color: #ffffff;
+}
+
+.loginImg{width: 100%;}
+
+.col-form{margin-left: 1.5%;}
+
+.col-form h3, .col-form a{text-align: center;}
+
+h3{
+    border-bottom: solid 2px #FF1616;
+    padding-bottom: 2%;
+}
+
+.form-group{position: relative;}
+
+.form-social, .modal-body .bi-social{background-color: #050A30;}
+
+.modal-body input[type='text'],
+.modal-body input[type='password'],
+.modal-body .input-group-text{
+    background: none;
+    color: #ffff;
+    border: none;
+    border-bottom: solid 2px #ffff;
+    letter-spacing: 1px;
+}
+
+.btn-close{
+    margin-left: 90%;
+    margin-top: 3%;
+}
+
+.btn-login{
+    background-color: #ffff;
+    color: #050A30;
+    font-weight: bold;
+}
+
+/*3. VIDEO RULES*/
+
+/*Start video rules*/
+
+#myVideo {
+    background-color: black;
+    position:fixed;
+    right: 0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: 3;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+} 
+
+.container-video{
+    /* background-color: #000; */
+    min-width: 100%;
+    min-height: 100%;
+    position: fixed;
+    z-index: 3;
+}
+
+
+
+.videoNone {
+    display: none;
+}
+
+.content {
+    position:fixed;
+    z-index: 4;
+    bottom: 0;
+    background: rgba(36, 51, 134, 0.322);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+}
+
+#myBtn:hover, #myBtn2:hover {
+    background: #ddd;
+    color: black;
+} 
+
+#textAnimation {
+    color: #C41010;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 0.4rem;
+}
+
+.animation{
+    position: relative;
+    display: block;
+    margin: 0;
+    font-size: 3rem;
+    line-height: 1;
+    transform: translateY(6rem);
+    animation: up 1000ms linear forwards;
+    z-index: 1;
+    text-shadow: 0px 1px 1px rgba(255,255,255,1);
+}
+
+p.animation{font-size: 2rem !important;}
+
+.animation::before, .animation::after{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 1px;
+    left: 0;
+    background-color: rgba(0,0,0,0.2);
+    z-index: -1;
+}
+
+.animation::before{
+    top: 1.4rem;
+    animation: draw 10s linear 10s forwards;
+}
+
+.animation::after{
+    bottom: 0.4rem;
+    animation: draw 10s linear 10s forwards;
+}
+
+@keyframes up {
+    100% {
+        transform: translateY(0);
+    }
+}
+
+@keyframes draw {
+    100% {
+        width: 100%;
+    }      
+} 
+
+/*4. NAVBAR RULES*/
+
+/*Start Navbar rules*/
+
+.navbar{background-color: #ffff;}
+
+.navbar-logo{width: 26%;}
+
+nav img{
+    width: 35%; 
+    height: 80%;
+    margin-left: 20%;
+}
+
+.navbar .active {
+    background: #F2F4F4;
+    overflow:hidden;
+    border-bottom:2px solid #C41010;
+    padding:8px;
+    border-radius: 20px
+}
+
+.btn-Add{
+    max-width: 30%;
+    padding-left: 2%;
+    background-color: #e6dede;
+    color: #050A30;
+}
+
+.btn-login-nav, .btn-register-nav{
+    max-width: 35%;
+}
+
+.collapse-search{display: inline-flex;}
+
+.collapse-search i {font-size: 1.25rem;}
+
+/* Start Breadcrum rules */
+
+.info{
+    background-color: #050A30 ;
+    margin-bottom: 0px ;
+    font-weight: bold;
+    color: #ffff;
+}
+
+.info a{
+    text-decoration: none;
+    color: #ffff
+}
+
+.info ol{
+    padding-top: 10px;
+    padding-left: 65px;
+}
+
+/*5. MAIN RULES*/
+
+.main{background-color: #050A30 !important;}
+
+/*6. PRINCIPAL RULES*/
+
+.fondo{
+    background-color: #D9D9D9;
+    border-radius: 20px;
+}
+
+.card{
+    width: 17rem;
+    border-radius: 20px;
+    margin-bottom: 1%;
+}
+
+.card h5, h3, h2{
+    font-family: 'Racing Sans One', cursive;
+}
+
+.card-body p, .category{
+    font-size: small;
+    text-align: justify;
+    text-justify: inter-word;    
+}
+
+.card img{height: 158.3px;}
+
+.card .btn, .btn-cancel, .btn-login-nav{
+    background-color: #FF1616;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.btn-register-nav{
+    background-color: #050A30;
+    color: #ffff;
+    font-weight: bold;
+}
+
+.card .btn, .btn-cancel{margin-left: 20%;}
+
+.text-truncate-container {width: 95%;}
+
+.text-truncate-container p {
+    -webkit-line-clamp: 3;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.card .btn:hover,
+.card .btn:focus{ 
+    background-color: #C41010;
+    color: #ffffff;
+}
+
+h2{text-align: center;}
+
+
+/* 7. SIDEBAR RULES */
+
+.col-s-2{width: 25%;}
+
+    /*Redes sociales */
+
+.social-net, .news-entry{
+    border-radius: 15px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.bi-social {
+    padding: 10px;
+    font-size: 20px;
+    width: 20px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
+    color: #ffff;
+}
+
+.bi-social:hover { opacity: 0.7;}
+
+.bi-facebook {background: #3B5998;}
+
+.bi-instagram {background: #ac2bac;}
+
+.bi-twitter {background: #55ACEE;}
+
+.bi-google {background: #dd4b39;}
+
+.bi-pinterest {background: #cb2027;
+}
+.bi-mastodon {background: #1C2833;}
+
+    /*carrusel de imagenes*/
+
+.img-carousel{
+    margin: 0;
+    height: 169px;
+}
+
+.carousel-caption {
+    right: 0;
+    left: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.65);
+} 
+
+.carousel-caption small{
+    font-size: small;
+    margin-left: 4%;
+}
+
+.text-truncate{ max-width: 190px;}
+
+    /*Banner*/
+
+.banner img{
+    width: 100%;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.5);
+}
+
+/*8. FOOTER RULES*/
+
+footer{border-top:solid 3px #FF1616;}
+
+footer a{
+    text-decoration: none;
+    color: black;
+}
+
+iframe{
+    height: 65%;
+}
+
+/*9. RESPONSIVE RULES*/
+
+@media screen and (max-width: 1199px){
+    .modal-body .col-md-7{
+        display: none;
+    }
+    .modal-body .col-md-8{
+        width: 85%;
+        margin-left: 7%;
+        padding-bottom: 2%;
+    }
+    .video {
+        position: fixed;
+        z-index: 3;
+        height: auto;
+        width: 60%;
+    }
+    
+    video {
+        transform: translateY(49%);
+        width: 100%; 
+        max-width: 100%; 
+        max-height: 50%;
+        position: fixed;
+        z-index: 3;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .col-s-2 {
+        width: 95% !important;
+    }
+    .social-net{
+        width: 25%;
+    }
+    .news-entry{
+        width: 43%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .banner{
+        width: 24%;
+    }
+    .video {
+        position: fixed;
+        z-index: 3;
+        height: 90%;
+        width: 60%;
+    }
+    
+    video {
+        transform: translateY(29%);
+        width: 100%; 
+        max-width: 100%; 
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+}
+
+@media screen and (max-width:414px) {
+    .social-net{
+        width: 100%;
+    }
+    .news-entry{
+        width: 100%;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+    .banner{
+        width: 100%;
+    }
+    .video {
+        position: fixed;
+        z-index: 3;
+        height: auto;
+        width: 60%;
+    }
+    
+    video {
+        transform: translateY(49%) translateX(1.9%);
+        width: 100%; 
+        max-width:100%; 
+        max-height: 50%;
+        top: 0;
+        left: 10px !important;
+        width: 100%;
+        height: 100%;
+    }
+}
