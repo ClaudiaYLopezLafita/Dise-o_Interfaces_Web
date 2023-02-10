@@ -14,6 +14,15 @@
  * Basically, replaces/toggles every CSS class that has '-light' class with '-dark'
  */
 function darkMode() {
+
+    let status = document.getElementById('lightSwitch').checked;
+    debugger
+    if(status == true){
+        document.getElementById('breadcrumb').classList.remove('info');
+        document.getElementById('breadcrumb').classList.add('bread');
+        document.getElementById('main').classList.remove('main');
+    }
+
     document.querySelectorAll('.bg-light').forEach((element) => {
     element.className = element.className.replace(/-light/g, '-dark');
     });
@@ -45,6 +54,14 @@ function darkMode() {
  * @summary: changes the theme to 'light mode' and save settings to local stroage.
  */
 function lightMode() {
+    let status = document.getElementById('lightSwitch').checked;
+    debugger
+    if(status == false){
+        document.getElementById('breadcrumb').classList.remove('bread');
+        document.getElementById('breadcrumb').classList.add('info');
+        document.getElementById('main').classList.add('main');
+    }
+
     document.querySelectorAll('.bg-dark').forEach((element) => {
     element.className = element.className.replace(/-dark/g, '-light');
     });
@@ -56,6 +73,12 @@ function lightMode() {
     } else {
     document.body.classList.add('text-dark');
     }
+
+    /**
+     *     document.getElementById('breadcrumb').classList.add('info');
+    document.getElementById('main').classList.add('main');
+
+     */
 
     // Tables
     var tables = document.querySelectorAll('table');

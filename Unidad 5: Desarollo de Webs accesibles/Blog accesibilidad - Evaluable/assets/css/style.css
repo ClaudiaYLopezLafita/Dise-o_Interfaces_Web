@@ -211,14 +211,6 @@ nav img{
     margin-left: 20%;
 }
 
-/* .navbar .active {
-    background: #F2F4F4;
-    overflow:hidden;
-    border-bottom:2px solid #C41010;
-    padding:8px;
-    border-radius: 20px
-} */
-
 .btn-Add{
     max-width: 30%;
     padding-left: 2%;
@@ -242,8 +234,12 @@ nav img{
     font-weight: bold;
     color: #ffff;
 }
+.bread{
+    margin-left: 5%;
+    margin-top: 1%;
+}
 
-.info a{
+.bread a, .info a{
     text-decoration: none;
     color: #ffff
 }
