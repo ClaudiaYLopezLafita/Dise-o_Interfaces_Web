@@ -16,7 +16,6 @@
 function darkMode() {
 
     let status = document.getElementById('lightSwitch').checked;
-    debugger
     if(status == true){
         document.getElementById('breadcrumb').classList.remove('info');
         document.getElementById('breadcrumb').classList.add('bread');
