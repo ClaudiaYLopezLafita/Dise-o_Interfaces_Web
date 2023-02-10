@@ -25,6 +25,8 @@ function darkMode() {
         document.getElementById('fondoMain').classList.add('fondo2');
         document.getElementById('fondoSidebar').classList.remove('fondo');
         document.getElementById('fondoSidebar').classList.add('fondo2');
+        document.getElementById('logo').removeAttribute('src');
+        document.getElementById('logo').setAttribute('src','./assets/images/logoHeaderDark.svg')
     }
 
     document.querySelectorAll('.bg-light').forEach((element) => {
@@ -59,15 +61,19 @@ function darkMode() {
  */
 function lightMode() {
     let status = document.getElementById('lightSwitch').checked;
-    debugger
     if(status == false){
+        //cambio background main
         document.getElementById('breadcrumb').classList.remove('bread');
         document.getElementById('breadcrumb').classList.add('info');
         document.getElementById('main').classList.add('main');
+        //cambio de fondo de main y sidebar
         document.getElementById('fondoMain').classList.remove('fondo2');
         document.getElementById('fondoMain').classList.add('fondo');
         document.getElementById('fondoSidebar').classList.remove('fondo2');
         document.getElementById('fondoSidebar').classList.add('fondo');
+        //cambio de logo
+        document.getElementById('logo').removeAttribute('src');
+        document.getElementById('logo').setAttribute('src','./assets/images/logoHeader.svg')
     }
 
     document.querySelectorAll('.bg-dark').forEach((element) => {
@@ -142,4 +148,3 @@ function setup() {
 
 setup();
 })();
-  
