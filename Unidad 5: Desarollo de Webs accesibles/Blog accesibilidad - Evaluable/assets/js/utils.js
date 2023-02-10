@@ -4,7 +4,7 @@ let btn2 = document.getElementById("myBtn2");
 let h2 = document.getElementById("h2");
 let content = document.getElementById("textContent");
 
-btn2.addEventListener("click",pauseVideo,true)
+// btn2.addEventListener("click",pauseVideo,true)
 btn.addEventListener("click",closeVideo, true)
 
 function closeVideo() {

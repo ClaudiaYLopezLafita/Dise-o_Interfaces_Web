@@ -14,7 +14,8 @@
     <!-- CSS link-->
     <link rel="stylesheet" href="./assets/css/style.css">
     <!-- JS file-->
-    <script defer src="./assets/js/utils.js"></script>
+    <!-- <script defer src="./assets/js/utils.js"></script> -->
+    <script defer src="./assets/js/switch.js"></script>
 </head>
 <body>
     <!-- START MODAL-->
@@ -91,11 +92,11 @@
     <!-- START BODY INDEX -->
     <div class="container-fluid p-0">
         <!-- START NAVBAR -->
-        <nav class="navbar navbar-expand-lg navbar-light ">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
             <div class="container-fluid">
                 <!-- logo page-->
                 <a class="navbar-brand navbar-logo" href="index.html">
-                    <img src="./assets/images/logoHeader.svg" alt="Avatar Logo"> 
+                    <img src="./assets/images/logoHeader.svg" alt="imperialLogo"> 
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -104,18 +105,18 @@
                 <div class="row collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- option menu-->
                     <div class="col-md-5 px-0">
-                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <ul class="nav navbar-nav me-auto mb-2 mb-lg-0">
                             <li class="nav-item">
-                                <a class="nav-link text-dark" aria-current="page" href="#">Home</a>
+                                <a class="nav-link fw-bold" aria-current="page" href="#">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class=" active nav-link text-dark" aria-current="page" href="#">Entradas</a>
+                                <a class="nav-link fw-bold" aria-current="page" href="#">Entradas</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" aria-current="page" href="#">Categorias</a>
+                                <a class="nav-link fw-bold" aria-current="page" href="#">Categorias</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" aria-current="page" href="#">Sobre Nosotros</a>
+                                <a class="nav-link fw-bold" aria-current="page" href="#">Sobre Nosotros</a>
                             </li>
                         </ul>
                         
@@ -136,12 +137,32 @@
                     </div>
                     <!-- collapse search-->
                     <div class="col-md collapse-search" aria-current="page">
-                        <i class="bi bi-search mt-1" title="icon_search" data-bs-toggle="collapse" data-bs-target="#collapse_search" aria-expanded="false" aria-controls="collapse_search"></i>
+                        <i class="bi bi-search mt-1" title="icon_search" data-bs-toggle="collapse" data-bs-target="#collapse_search" aria-expanded="false" aria-controls="collapse_search" role="img"></i>
                         <div class="collapse collapse-horizontal" id="collapse_search" >
                             <input class="form-control-sm rounded-pill" type="search" placeholder="Buscar" aria-label="Buscar">
                             <button type="button" class="btn-close m-0 mt-1" aria-label="Cerrar" data-bs-toggle="collapse" data-bs-target="#collapse_search" aria-expanded="false" aria-controls="collapse_search"></button>
                         </div>
                     </div>
+                </div>
+            </div>
+            <!-- LIGHT SWITCH -->
+            <div class="d-flex">
+                <div class="form-check form-switch ms-auto mt-3 me-3">
+                    <label class="form-check-label ms-3" for="lightSwitch">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-brightness-high"
+                        viewBox="0 0 16 16"
+                    >
+                        <path
+                        d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"
+                        />
+                    </svg>
+                    </label>
+                    <input class="form-check-input" type="checkbox" id="lightSwitch"/>
                 </div>
             </div>
         </nav>
@@ -153,7 +174,6 @@
             </ol>
         </nav>
         <!-- END NAVBAR -->
-
         <!-- START MAIN -->
         <div class="main container-fluid ">
             <div class="row justify-content-center gx-3">
@@ -161,7 +181,7 @@
                 <div class="col-lg-8 py-3 px-3">
                     <div class="fondo row justify-content-around py-3">
                         <!-- card 1-->
-                        <div class="card not-margin">
+                        <div class="card bg-light">
                             <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Tips</p>
                             <img src="./assets/images/imgCard1.jpeg" class="card-img-top mt-0" alt=".">
                             <!--body card-->
@@ -170,7 +190,7 @@
                                 <p class="card-subtitle my-2 text-muted"><i class="bi bi-tags-fill"></i> Minimalismo, Barefoot</p>
                                 <p class="card-text">A menudo recibo comentarios y preguntas en el blog y las redes sociales acerca de cuál es la forma correcta de correr descalzo.</p>
                                 <!-- icon card-->
-                                <div class=" icons-card row">
+                                <div class="icons-card row">
                                     <small class="col"><i class="col bi bi-eye-fill">20k</i> </small>
                                     <small class="col"><i class="col bi bi-chat-fill">50</i> </small>
                                     <small class="col"><i class="col bi bi-heart-fill">5k</i></small>
@@ -180,7 +200,7 @@
                             </div>
                         </div>
                         <!-- card 2-->
-                        <div class="card">
+                        <div class="card bg-light">
                             <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Tips</p>
                             <img src="./assets/images/imgCard2.jpeg" class="card-img-top mt-0" alt=".">
                             <!-- body card-->
@@ -199,7 +219,7 @@
                             </div>
                         </div>
                         <!-- card 3-->
-                        <div class="card">
+                        <div class="card bg-light">
                             <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Eventos</p>
                             <img src="./assets/images/imgCard3.jpeg" class="card-img-top mt-0" alt=".">
                             <div class="card-body justify-content-center text-truncate-container px-2">
@@ -217,7 +237,7 @@
                             </div>
                         </div>
                         <!-- card 4-->
-                        <div class="card not-margin">
+                        <div class="card bg-light">
                             <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Salud</p>
                             <img src="./assets/images/imgCard4.jpg" class="card-img-top mt-0" alt=".">
                             <!-- body card-->
@@ -236,7 +256,7 @@
                             </div>
                         </div>
                         <!-- card 5-->
-                        <div class="card">
+                        <div class="card bg-light">
                             <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Salud</p>
                             <img src="./assets/images/imgCard5.jpeg" class="card-img-top mt-0" alt=".">
                             <!--body card-->
@@ -255,7 +275,7 @@
                             </div>
                         </div>
                         <!-- card 6-->
-                        <div class="card">
+                        <div class="card bg-light">
                             <p class="category card-subtitle my-1 text-muted"><i class="bi bi-bookmark-fill"></i> Salud</p>
                             <img src="./assets/images/imgCard6.jpg" class="card-img-top mt-0" alt=".">
                             <!-- body card-->
@@ -348,46 +368,46 @@
         </div>
         <!-- END MAIN -->
         <!-- START FOOTER -->
-        <footer class="pt-4 pb-2">
-            <div class="row">
+        <footer class="bg-light pt-4 pb-2">
+            <div class="row bg-light">
                 <!-- localitacion-->
-                <div class="col-md-5 offset-sm-1 mb-3 pl-0">
+                <div class="col-md-5 bg-light offset-sm-1 mb-3 pl-0">
                     <h5>Localizanos</h5>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12681.179418684065!2d-6.0584269!3d37.3828587!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x1ca80e208bb71b4d!2sInstituto%20de%20Educaci%C3%B3n%20Secundaria%20Alixar!5e0!3m2!1ses!2ses!4v1673958290706!5m2!1ses!2ses" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 <!--sections-->
-                <div class="col-6 col-md-2 mb-3">
+                <div class="col-6 bg-light col-md-2 mb-3">
                     <h5>Secciones</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-1"><a href="#">HOme</a></li>
-                        <li class="nav-item mb-1"><a href="#">Entradas</a></li>
-                        <li class="nav-item mb-1"><a href="#">Categoria</a></li>
-                        <li class="nav-item mb-1"><a href="#">Sobre Nosotros</a></li>
+                    <ul class="nav navbar-nav flex-column">
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Entradas</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Categoria</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Sobre Nosotros</a></li>
                     </ul>
                 </div>
                 <!--tags-->
-                <div class="col-6 col-md-2 mb-3">
+                <div class="col-6 bg-light col-md-2 mb-3">
                     <h5>Etiquetas</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-1"><a href="#">Salud</a></li>
-                        <li class="nav-item mb-1"><a href="#">Anatomia</a></li>
-                        <li class="nav-item mb-1"><a href="#">Alimentación</a></li>
-                        <li class="nav-item mb-1"><a href="#">...</a></li>
+                    <ul class="nav navbar-nav flex-column">
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Salud</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Anatomia</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Alimentación</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">...</a></li>
                     </ul>
                 </div>
                 <!--categories-->
-                <div class="col-6 col-md-2 mb-3">
+                <div class="col-6 bg-light col-md-2 mb-3">
                     <h5>Categorias</h5>
-                    <ul class="nav flex-column">
-                        <li class="nav-item mb-1"><a href="#">Tips</a></li>
-                        <li class="nav-item mb-1"><a href="#">Salud</a></li>
-                        <li class="nav-item mb-1"><a href="#">Eventos</a></li>
-                        <li class="nav-item mb-1"><a href="#">...</a></li>
+                    <ul class="nav navbar-nav flex-column">
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Tips</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Salud</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">Eventos</a></li>
+                        <li class="nav-item"><a class="nav-link py-0" href="#">...</a></li>
                     </ul>
                 </div>
             </div>
             <!--licenses-->
-            <div class="d-flex flex-column flex-sm-row justify-content-center pt-3 pb-2 my-2 border-top">
+            <div class="bg-light d-flex flex-column flex-sm-row justify-content-center pt-3 pb-2 my-2 border-top">
                 <p><a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licencia de Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png"/></a> 2023 Alixar, IES.</p>
             </div>
         </footer>
