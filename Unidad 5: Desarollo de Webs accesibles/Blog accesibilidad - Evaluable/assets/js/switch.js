@@ -21,6 +21,10 @@ function darkMode() {
         document.getElementById('breadcrumb').classList.remove('info');
         document.getElementById('breadcrumb').classList.add('bread');
         document.getElementById('main').classList.remove('main');
+        document.getElementById('fondoMain').classList.remove('fondo');
+        document.getElementById('fondoMain').classList.add('fondo2');
+        document.getElementById('fondoSidebar').classList.remove('fondo');
+        document.getElementById('fondoSidebar').classList.add('fondo2');
     }
 
     document.querySelectorAll('.bg-light').forEach((element) => {
@@ -60,6 +64,10 @@ function lightMode() {
         document.getElementById('breadcrumb').classList.remove('bread');
         document.getElementById('breadcrumb').classList.add('info');
         document.getElementById('main').classList.add('main');
+        document.getElementById('fondoMain').classList.remove('fondo2');
+        document.getElementById('fondoMain').classList.add('fondo');
+        document.getElementById('fondoSidebar').classList.remove('fondo2');
+        document.getElementById('fondoSidebar').classList.add('fondo');
     }
 
     document.querySelectorAll('.bg-dark').forEach((element) => {
